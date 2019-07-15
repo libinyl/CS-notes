@@ -6,3 +6,9 @@ while true;do tree;sleep 1;clear;done
 ```
 watch -n 1 tree
 ```
+
+
+## 清空文件
+```
+> hello.txt
+```
