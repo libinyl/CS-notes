@@ -55,6 +55,8 @@ int main()
 - fprintf 写入到文件
 - sprintf 写入到给定的 `buff`
 
-vprintf 系列：用于封装自己的打印函数，方便处理变长参数。
+- vprintf 系列：用于封装自己的打印函数，方便处理变长参数。
 
-参考:[Stack Overflow](https://stackoverflow.com/questions/1485805/whats-the-difference-between-the-printf-and-vprintf-function-families-and-when)
+- snprintf 系列：非标准库，由于限制了输出 buf 的长度所以更加安全。sprintf可能有缓冲区溢出风险.
+
+参考：[Stack Overflow](https://stackoverflow.com/questions/1485805/whats-the-difference-between-the-printf-and-vprintf-function-families-and-when)
