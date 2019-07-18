@@ -80,7 +80,38 @@ x/10x $sp
 
 push的深度会随着数据类型的变化而变化
 
+## 跟踪 fork 的进程
 
+```
+set follow-fork-mode parent
+set follow-fork-mode child
+show follow-fork-mode
+```
+
+## 跟踪 exec 之后的进程
+
+```
+catch exec
+```
+
+## 查看 pid
+
+```
+info inferior
+```
+
+## 查看 debug 的进程的文件描述符表
+
+```
+info proc(获取进程号)
+shell ls -l /proc/进程号/fd
+```
+
+## 查看进程信息
+
+```
+info proc map
+```
 
 参考资料:
 
