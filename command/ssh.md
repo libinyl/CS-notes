@@ -2,3 +2,5 @@
 
 1. `ssh-add ~/.ssh/id_rsa`
 2. `cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorized_keys'`
+
+## 防止连接超时
