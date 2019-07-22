@@ -1,0 +1,19 @@
+## 通用设置
+
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": -1,
+    "git.autofetch": true,
+    "files.autoSave": "afterDelay",
+    "explorer.openEditors.visible": 0,
+    "editor.fontSize": 16,
+    "editor.renderControlCharacters": true,
+    "editor.showFoldingControls": "always",
+    "editor.minimap.enabled": false,
+    "workbench.useExperimentalGridLayout": true,
+    "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 20,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.highlightModifiedTabs": true
+}
