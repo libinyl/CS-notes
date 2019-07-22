@@ -118,3 +118,12 @@ info proc map
 - [参考链接](http://visualgdb.com/gdbreference/commands/x)
 
 - [Youtube: CppCon 2016: Greg Law “GDB - A Lot More Than You Knew"](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
+
+# gdbserver
+
+```
+远程
+gdbserver ip:port  appname(进程名)
+本地
+gdb target remote ip:port
+```
