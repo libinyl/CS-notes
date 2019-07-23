@@ -1,5 +1,5 @@
 ## 通用设置
-
+```json
 {
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.startupEditor": "newUntitledFile",
@@ -17,3 +17,10 @@
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.highlightModifiedTabs": true
 }
+```
+## 快捷键
+
+功能 | 按键
+---|---
+显示侧边栏 | Cmd B
+跳转到符号 | Cmd T

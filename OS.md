@@ -27,3 +27,19 @@
     **副作用的解决方案**: 把相同的资源映射到同一物理地址.
 
 参考资料  [YouTube: 虚拟内存](https://www.youtube.com/watch?v=59rEMnKWoS4&list=PLiwt1iVUib9s2Uo5BeYmwkDFUh70fJPxX&index=4)
+
+## 存储器概览
+
+- 存储 BIOS 信息:**EEPROM**,Electrically Erasable Programmable Read Only Memory  电可擦写可编程只读存储器,断电后仍可保存
+- 存储临时工作数据: **DRAM**,Dynamic Random Access Memory 动态随机访问存储器,需要通电刷新,断电后数据消失
+- 在CPU中存储常用指令与数据:**SRAM**,Static Random Access Memory 静态随机访问存储器,数据无需通电刷新,断电后数据消失
+
+断电后数据不消失统称为**非易失性（或非发挥性）随机访问存储器,NVRAM**,即Non-Volatile Random Access Memory.反之称为 VRAM.
+
+[参考链接](https://blog.csdn.net/x86ipc/article/details/5950436)
+
+## 硬件相关
+
+
+- **CMOS**: [Complementary Metal Oxide Semiconductor](https://baike.baidu.com/item/CMOS/428167?fr=aladdin),互补金属氧化物半导体,电脑主板上的一块可读写的RAM芯片.由于可读写,所以常用于保存计算机基本启动信息（如日期、时间、启动设置等）.
+- RTC: Real Time Clock: 使计算机的时间实时最新的芯片.
