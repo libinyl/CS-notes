@@ -12,3 +12,7 @@ watch -n 1 tree
 ```
 > hello.txt
 ```
+
+## 基础
+
+变量取值: ${i}

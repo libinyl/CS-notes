@@ -30,3 +30,21 @@ Goodbye
 ```
 git log filename
 ```
+
+## 跟踪关系
+```
+// 查看跟踪关系
+git branch -vv
+// 设置跟踪关系
+git branch --set-upstream-to=远端库名/远端分支名 本地分支名
+```
+
+## 分支
+```
+//查看所有分支
+git branch -a 
+//切换远程分支
+git checkout -b 本地分支名 远程库/远程分支名
+```
+
+## 查看单个文件的日志
