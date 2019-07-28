@@ -64,6 +64,10 @@ x/10x $sp
 
 切换是否多视图:`Ctrl-x a`
 
+## 查看调用栈
+
+backtrace 或 bt
+
 ## 其他操作
 
 上一个命令: `Ctrl-p`
@@ -113,17 +117,63 @@ shell ls -l /proc/进程号/fd
 info proc map
 ```
 
-参考资料:
-
-- [参考链接](http://visualgdb.com/gdbreference/commands/x)
-
-- [Youtube: CppCon 2016: Greg Law “GDB - A Lot More Than You Knew"](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
-
-# gdbserver
+## gdbserver
 
 ```
 远程
 gdbserver ip:port  appname(进程名)
 本地
-gdb target remote ip:port
+先gdb,
+然后 target remote [ip]:[port]
+target remote 是关键字 不是可替代参数
 ```
+
+## gdb 源码相关
+
+设定源码搜索位置
+
+```
+directory [位置]
+```
+
+查看源码搜索位置
+
+```
+show directories
+show substitute-path 
+info sources
+```
+
+## 无法用 clion 默认设置远程调试 6.828 的原因:
+
+**背景**: 远程代码已编译生成有调试符号的二进制文件,且本地与远程代码已同步,且 clion 中已经建立好 mapping 关系. 
+   
+**问题**: 打断点,单击 debug 按钮后不停下,直接执行到底,提示"no source file named..."
+
+**原因**: 
+
+首先要了解gdb 寻找源码的步骤.
+
+1. 在编译后,二进制文件会包含一个`source path`的信息(可以通过`show directories`查看),gdb 首先在此目录下查看.如果没有找到则继续.
+2. 二进制文件可能会包含"编译时目录",即它被编译时所在的目录,是一个绝对路径,如`/root/foo`. gdb首先查看当前的 gdb session 是否设置了`substitute-path`,如果设置了,比如设置成了`/roor/ -> /root/User/bar`,那么就把编译时目录进行替换:`/root/User/bar/foo`,然后在此目录下查找.通常适用于远程调试的环境,clion 的 mapping 本质上就是按此设置.如果还没找到,则继续
+3. 最后在`current working directory`寻找.可以通过`pwd`来查看此路径.
+
+
+我们的问题发生的过程是, 6.828 的编译结果不含编译时目录,于是设置的 mapping 自然无法替换;于是 gdb 尝试在当前工作目录下查找,而 clion 启动的 gdb 的初始工作目录是 clion 程序所在的文件夹,自然无法找到.
+
+二进制文件至少会记录文件名,可以用`info sources`查看.如果 mapping 成功,则会显示绝对路径.
+
+**解决方法**
+
+用`directory`设置`source path`即可.
+
+参考链接: ftp://ftp.gnu.org/old-gnu/Manuals/gdb-4.17/html_node/gdb_49.html
+
+
+
+
+参考资料:
+
+- [参考链接](http://visualgdb.com/gdbreference/commands/x)
+
+- [Youtube: CppCon 2016: Greg Law “GDB - A Lot More Than You Knew"](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
