@@ -181,3 +181,9 @@ objdump -G
 ```
 objdump -g
 ```
+
+## 反汇编
+
+```
+obj -d
+```

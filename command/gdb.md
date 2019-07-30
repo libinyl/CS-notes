@@ -144,6 +144,11 @@ show substitute-path
 info sources
 ```
 
+## 实模式下查看当前执行指令
+```
+(gdb) x ($cs*0x10+(int)(*$eip))
+```
+
 ## 无法用 clion 默认设置远程调试 6.828 的原因:
 
 **背景**: 远程代码已编译生成有调试符号的二进制文件,且本地与远程代码已同步,且 clion 中已经建立好 mapping 关系. 
