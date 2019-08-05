@@ -47,4 +47,10 @@ git branch -a
 git checkout -b 本地分支名 远程库/远程分支名
 ```
 
+## 对比远程与本地的差异
+```
+git fetch origin
+git log master..origin/master
+```
+
 ## 查看单个文件的日志
