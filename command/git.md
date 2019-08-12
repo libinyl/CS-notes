@@ -1,4 +1,3 @@
-
 ## remote
 
 修改 origin:
@@ -53,4 +52,6 @@ git fetch origin
 git log master..origin/master
 ```
 
-## 查看单个文件的日志
+## Git warning: push.default is unset; its implicit value is changing
+
+

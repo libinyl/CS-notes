@@ -4,3 +4,4 @@
 ---|----
 查看宏替换的结果  | Ctrl + J
 跳转到某文件 | Sft Cmd N
+跳转到某符号 | Sft Opt Cmd N

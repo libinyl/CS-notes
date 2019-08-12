@@ -172,6 +172,10 @@ info sources
 
 用`directory`设置`source path`即可.
 
+如何操作?
+
+
+
 参考链接: ftp://ftp.gnu.org/old-gnu/Manuals/gdb-4.17/html_node/gdb_49.html
 
 
