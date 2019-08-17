@@ -29,6 +29,35 @@ i = i or i
 xor    %ax,%ax // 汇编常用到
 ```
 
+## 运算技巧
+
+1. 从 1 开始,每次向左移 10 位,都是 2 的整10倍次方.
+
+lg(10<sup>n</sup>) = n
+
+1 << n = 2<sup>n</sup>, n>0
+
+1 << 10n = 2<sup>10n</sup>
+
+```
+#define LOG2ENV = 10 // 1010
+```
+
+## 十六-十进制常用数字
+
+十六进制 | 十进制
+-----|----
+0x00000010 Byte | 16KB
+0x00001000 Byte | 4KB
+0x00100000 Byte | 1MB
+0x01000000 Byte | 16MB
+0x08000000 Byte | 128MB(qemu 默认)  
+0x10000000 Byte | 256MB
+0x40000000 Byte | 1GB
+0x80000000 Byte | 2GB
+0xFFFFFFFF Byte | 4GB-1B
+
+
 ## 计量单位
 
 在计算机科学中，`GB`通常实际上值得是`GiB`.
