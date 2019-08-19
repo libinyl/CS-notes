@@ -12,3 +12,10 @@ sudo apt-get install libgtk2.0-dev
 make
 sudo make install
 ```
+
+## 配置文件示例:
+
+```
+//位置
+/usr/local/share/doc/bochs/bochsrc-sample.txt
+```
