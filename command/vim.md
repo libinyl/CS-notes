@@ -19,3 +19,12 @@ p   粘贴
 
 ## vimrc
 
+```
+set nu
+set mouse=a
+set tabstop=4
+set cursorline
+syntax enable
+set completeopt=longest,menu
+set laststatus=2
+```

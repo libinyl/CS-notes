@@ -20,3 +20,7 @@ movl	%eax, %cr0
 ```
 
 lgdt
+
+## 知识点
+
+intel 没有提供用 mov 改变 cs:ip 的功能.只能通过 jmp 来改变 cs 和 ip.

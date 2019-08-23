@@ -29,3 +29,6 @@ watch -n 1 tree
 
 
 
+## 环境变量加载顺序
+
+![bash脚本加载顺序](/images/bash启动顺序.png)
