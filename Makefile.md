@@ -19,3 +19,25 @@ $? | 当前目标所依赖的文件列表中比当前目标文件还要新的文
 
 参考: https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html
 
+## 模板
+
+```
+TARGET:=simplest
+OBJ:= simplest.o
+
+
+LD :=ld
+NASM:=nasm
+
+LD_FLAGS 	:=
+NASM_FLAGS	:= -f elf64
+
+$(TARGET): $(OBJ)
+	$(LD) $(LD_FLAGS) $^ -o $@
+
+$(OBJ): simplest.asm
+	$(NASM) $(NASM_FLAGS) -g $^ -o $@
+
+clean:
+	rm -rf $(TARGET) $(OBJ)
+```
