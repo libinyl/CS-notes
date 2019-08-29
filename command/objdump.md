@@ -192,4 +192,21 @@ obj -d
 
 选项 作用
 
--S   显示源码,与汇编混合
+-s   以十六进制显示所有段内容
+-d   把所有包含指令的段反汇编
+-x   打印所有的 heaer信息,包括符号表和重定位表   
+
+## program header 含义
+
+- program header-segment
+- section header-section
+
+- segment 字节数:p_memsz
+- segment 在文件内偏移:p_offset
+- 加载到目标地址:p_vaddr
+
+验证: offset+memsz=某个 section 的 offset
+
+
+
+参考[链接](https://docs.oracle.com/cd/E19683-01/816-1386/chapter6-83432/index.html)
