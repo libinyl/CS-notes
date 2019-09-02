@@ -42,7 +42,7 @@ git branch --set-upstream-to=远端库名/远端分支名 本地分支名
 
 软重置到某一版本:
 ```
-git reset hash 值
+git reset hash值
 ```
 
 ## 分支
