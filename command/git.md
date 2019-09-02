@@ -38,6 +38,13 @@ git branch -vv
 git branch --set-upstream-to=远端库名/远端分支名 本地分支名
 ```
 
+## 重置
+
+软重置到某一版本:
+```
+git reset hash 值
+```
+
 ## 分支
 ```
 //查看所有分支
