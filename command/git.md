@@ -62,4 +62,3 @@ git log master..origin/master
 ## Git warning: push.default is unset; its implicit value is changing
 
 
-![](2019-09-03-18-30-04.png)
