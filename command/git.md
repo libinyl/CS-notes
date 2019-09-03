@@ -60,5 +60,3 @@ git log master..origin/master
 ```
 
 ## Git warning: push.default is unset; its implicit value is changing
-
-
