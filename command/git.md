@@ -1,3 +1,15 @@
+## 创建库
+
+```
+echo "# unp1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:libinyl/unp1.git
+git push -u origin master
+```
+
+
 ## remote
 
 修改 origin:

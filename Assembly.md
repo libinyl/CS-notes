@@ -24,3 +24,14 @@ lgdt
 ## 知识点
 
 intel 没有提供用 mov 改变 cs:ip 的功能.只能通过 jmp 来改变 cs 和 ip.
+
+## 内联汇编
+
+r | Register
+--|---------
+a | %eax, %ax, %al
+b | %ebx, %bx, %bl
+c | %ecx, %cx, %cl
+d | %edx, %dx, %dl
+S | %esi, %si
+D | %edi, %di
