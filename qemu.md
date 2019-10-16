@@ -26,3 +26,8 @@ tail -r <(xxd -a -c 16 meminit.dump)>meminit.md
 info mem | 查看虚拟内存映射状态 | 
 info registers | 查看 CPU 状态 |
 
+## 选项汇总
+
+- -s 在 1234 端口打开一个 gdbserver
+- -S 开启时不启动 cpu
+

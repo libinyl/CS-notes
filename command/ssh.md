@@ -6,7 +6,7 @@
 root@MyServer:~/.ssh# ls
 id_rsa  id_rsa.pub  known_hosts
 ```
-2. 将本地 id_rsa.pub 文件的内容拷贝至远程服务器的 ~/.ssh/authorized_keys 文件
+2. 将**本地** id_rsa.pub 文件的内容拷贝至远程服务器的 ~/.ssh/authorized_keys 文件
 
 ```
 cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorized_keys'
