@@ -1,10 +1,5 @@
+- 执行完当前循环:`u (until) 行号`
 
-
-执行完当前循环:
-
-```
-u (until)
-```
 ## 断点
 
 查看当前所有断点
@@ -186,3 +181,18 @@ info sources
 - [参考链接](http://visualgdb.com/gdbreference/commands/x)
 
 - [Youtube: CppCon 2016: Greg Law “GDB - A Lot More Than You Knew"](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
+
+## 常用的 set
+
+set print object on
+set print pretty on
+set print vtbl on
+
+show print object
+show print pretty
+show print vtbl
+
+set disassembly-flavor intel
+
+## 虚函数表
+p /a (*(void ***)obj)[0]@10
