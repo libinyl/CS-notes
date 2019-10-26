@@ -19,7 +19,7 @@ R | 该符号位于只读数据区。例如定义全局const int test[] = {123, 
 S | 符号位于非初始化数据区，用于small object。
 T | 该符号位于代码区text section。
 U | 该符号在当前文件中是未定义的，即该符号的定义在别的文件中。例如，当前文件调用另一个文件中定义的函数，在这个被调用的函数在当前就是未定义的；但是在定义它的文件中类型是T。但是对于全局变量来说，在定义它的文件中，其符号类型为C，在使用它的文件中，其类型为U。
-V | 该符号是一个weak object。
+V | 该符号是一个weak object。当一个已定义的弱符号被连接到一个普通定义符号，普通定义符号可以正常使用，当一个未定义的弱对象被连接到一个未定义的符号，弱符号的值为0.
 W | The symbol is a weak symbol that has not been specifically tagged as a weak object symbol.
 - | 该符号是a.out格式文件中的stabs symbol。
 ? | 该符号类型没有定义
@@ -27,3 +27,5 @@ W | The symbol is a weak symbol that has not been specifically tagged as a weak 
 ## 常用
 
 按地址逆序输出: `nm -n -r kernel`
+
+把不可读的符号名转为可读符号名: `-C`
