@@ -155,7 +155,7 @@ info sources
 首先要了解gdb 寻找源码的步骤.
 
 1. 在编译后,二进制文件会包含一个`source path`的信息(可以通过`show directories`查看),gdb 首先在此目录下查看.如果没有找到则继续.
-2. 二进制文件可能会包含"编译时目录",即它被编译时所在的目录,是一个绝对路径,如`/root/foo`. gdb首先查看当前的 gdb session 是否设置了`substitute-path`,如果设置了,比如设置成了`/roor/ -> /root/User/bar`,那么就把编译时目录进行替换:`/root/User/bar/foo`,然后在此目录下查找.通常适用于远程调试的环境,clion 的 mapping 本质上就是按此设置.如果还没找到,则继续
+2. 二进制文件可能会包含"编译时目录",即它被编译时所在的目录,是一个绝对路径,如`/root/foo`. gdb首先查看当前的 gdb session 是否设置了`substitute-path`,如果设置了,比如设置成了`/root/ -> /root/User/bar`,那么就把编译时目录进行替换:`/root/User/bar/foo`,然后在此目录下查找.通常适用于远程调试的环境,clion 的 mapping 本质上就是按此设置.如果还没找到,则继续
 3. 最后在`current working directory`寻找.可以通过`pwd`来查看此路径.
 
 
@@ -165,9 +165,13 @@ info sources
 
 **解决方法**
 
-用`directory`设置`source path`即可.
+在~/.gdbinit 中用`set directory`设置`source path`即可.
+
+在 ucore 中: 
 
 如何操作?
+
+2019-11-02 再次遇到这个问题,之前写的太粗糙了,在哪敲命令都没指出来.
 
 
 
@@ -181,6 +185,13 @@ info sources
 - [参考链接](http://visualgdb.com/gdbreference/commands/x)
 
 - [Youtube: CppCon 2016: Greg Law “GDB - A Lot More Than You Knew"](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
+
+
+## clion 远程调试
+
+- clion 的 mapping 是必填字段,否则刚连上就会断开
+- 而且要把二进制文件复制到本地,否则断点不会断.可以用 clion 的 remote host 直接拖过来.
+- 断点无效的另一个常见原因是编译时对应代码被优化掉了.查看是否指定了 -O0 .
 
 ## 常用的 set
 
@@ -196,3 +207,27 @@ set disassembly-flavor intel
 
 ## 虚函数表
 p /a (*(void ***)obj)[0]@10
+
+## 带参调试
+
+gdb --args a.out arg1 arg2 arg3
+
+## 输出重定向
+call close(1)
+call open("/dev/pts/1", 2)
+
+## 调试心得
+
+多多利用栈信息,跳转到当前或上个函数的位置
+
+## 如何注释?
+
+自底向上, ...是对...的封装
+
+## 关于 gdb 的再总结
+
+gdb 调试有三个元素: 源码, 可执行文件, 进程.
+
+通常`gdb program`会直接执行可执行文件,创建进程, 并关联到代码. 这意味着二进制文件应该存储着源码路径信息.
+
+二进制文件可能没有完整的源码路径,此时就需要用`directory`来指定.如果是 clion,只能在`.gdbinit`中指定.

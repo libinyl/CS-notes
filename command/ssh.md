@@ -41,3 +41,8 @@ systemctl reload	sshd 	##重新加载服务配置  <===
 ssh -L <port>:localhost:<port> <username>@<server>
 ssh -L 25000:localhost:25000 root@154.48.248.252
 ```
+
+## vmware fusion headless
+```
+vmrun start "/Users/libinyl/Virtual Machines.localized/Ubuntu 64 位.vmwarevm" nogui
+```
