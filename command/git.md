@@ -72,3 +72,9 @@ git log master..origin/master
 ```
 
 ## Git warning: push.default is unset; its implicit value is changing
+
+## 报错处理
+
+- The remote end hung up unexpectedly while git cloning
+
+git config --global http.postBuffer 524288000
