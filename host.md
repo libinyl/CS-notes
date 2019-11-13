@@ -17,7 +17,10 @@ sudo vi  /etc/hosts
 
 ```
 //刷新 dns 缓存
+//linux
 sudo /etc/init.d/networking restart
+//mac
+sudo killall -HUP mDNSResponder
 ```
 
 最新 host: https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts
