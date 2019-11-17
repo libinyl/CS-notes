@@ -188,3 +188,6 @@ MSS:  最大段大小
 - 丢包
 - 错误
 
+## 数据类型
+
+ip地址: struct sockaddr
