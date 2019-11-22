@@ -6,6 +6,7 @@ ulimit -a
 ulimit -c unlimited
 //永久取消限制
 /etc/security/limits.conf
+*  soft  core  unlimited
 ```
 
 ## 调试 coredump
