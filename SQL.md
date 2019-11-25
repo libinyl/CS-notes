@@ -1,3 +1,9 @@
+## 环境
+
+安装 MYSQL
+
+sudo apt install mysql-server
+
 ## SQL tips
 
 - join 连接的通常都是主键.
