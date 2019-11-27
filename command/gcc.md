@@ -27,3 +27,7 @@ i386-elf-gcc -v
 -S | 编译,生成汇编代码 | .S
 -c | 汇编,生成二进制机器码 | .o
 -o | 链接 | .out
+
+## 编译 gcc 源码
+
+--enable-languages=c++
