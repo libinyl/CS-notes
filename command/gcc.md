@@ -31,3 +31,12 @@ i386-elf-gcc -v
 ## 编译 gcc 源码
 
 --enable-languages=c++
+
+## 编译时打印中间过程
+
+--verbose
+
+## undefined reference to 解决
+
+
+如果是库函数,如 sin 尝试直接 man sin

@@ -10,3 +10,10 @@
 8. System administration commands (usually only for root)
 9. Kernel routines [Non standard]
 
+## 快捷键
+
+- 首页 home
+
+## 添加 posix/ 手册
+
+sudo apt install manpages-posix manpages-posix-dev
