@@ -71,6 +71,11 @@ git fetch origin
 git log master..origin/master
 ```
 
+
+## diff
+
+git diff HEAD 显示工作目录与git仓库之间的差异
+
 ## Git warning: push.default is unset; its implicit value is changing
 
 ## 报错处理
