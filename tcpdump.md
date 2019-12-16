@@ -21,3 +21,7 @@ W | (ECN CWR),
 E | (ECN-Echo)
 . | (ACK)
 none | (no)
+
+## http 抓包
+
+tcpdump tcp port 80 -n -X -s 0

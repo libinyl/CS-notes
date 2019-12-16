@@ -14,3 +14,11 @@
 
 符号“/”指定步进设置。“/<interger>”表示步进值.如0-59/2定义每两分钟执行一次
  
+
+定时任务位置:/etc/cron.d/
+
+删除定时任务脚本后还需停止相应的定时进程,才能真正停止定时任务
+
+尝试测试: ab -c 1 http://predis1.safe.bjcc.qihoo.net:8889/cloudquery.php
+
+了解 php 分析测试代码

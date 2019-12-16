@@ -214,6 +214,8 @@ gdb --args a.out arg1 arg2 arg3
 
 ## 输出重定向
 call close(1)
+call close(2)
+call open("/dev/pts/1", 2)
 call open("/dev/pts/1", 2)
 
 ## 调试心得
@@ -231,3 +233,33 @@ gdb 调试有三个元素: 源码, 可执行文件, 进程.
 通常`gdb program`会直接执行可执行文件,创建进程, 并关联到代码. 这意味着二进制文件应该存储着源码路径信息.
 
 二进制文件可能没有完整的源码路径,此时就需要用`directory`来指定.如果是 clion,只能在`.gdbinit`中指定.
+
+
+## 进程相关
+
+命令 | 含义
+------- | -------
+info inferiors | 当前调试的进程
+
+
+## scheduler-locking
+
+set scheduler-locking off|on|step
+
+
+- off 不锁定任何线程,即所有线程都执行
+- on 只有当前被调试程序会执行
+- step 在单步的时候，除了next过一个函数的情况以外，只有当前线程会执行。
+
+一些术语
+
+模式名称 | 含义
+-----|---
+all-stop mode | 全停模式
+single-stepping | 单步执行
+scheduler-locking | 调度锁
+schedule-multiple | 多进程调度
+record mode | 记录模式
+replay mode | 回放模式
+
+## 窗口布局

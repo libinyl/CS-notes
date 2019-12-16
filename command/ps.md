@@ -12,8 +12,6 @@
 
 - 当前用户在当前窗口下所有的进程
 
-
-
 **查看进程阻塞原因**
 
 `ps -o pid,ppid,tty,stat,args,wchan`
@@ -23,3 +21,19 @@
 **命令逐次解释:**
 
 - 默认排序规则: 1)controlling terminal 2)pid
+
+**显示线程**
+
+ps -aL 
+
+ps -axuw
+
+1. USER
+2. PID
+3. %CPU
+4. %MEM
+5. VSZ
+6. RSS
+7. TTY
+8. STAT START   
+9. TIME COMMAND

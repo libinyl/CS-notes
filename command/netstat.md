@@ -20,5 +20,5 @@
 - -p 显示建立相关链接的程序名
 
 ```C
-netstat -atnp | grep 端口号
+netstat -atnp | grep 8081
 ```
