@@ -265,3 +265,10 @@ replay mode | 回放模式
 ## 窗口布局
 
 ## 跳过代码
+
+
+yum 安装 gdb
+sudo yum install centos-release-scl
+sudo yum install devtoolset-8
+
+../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include

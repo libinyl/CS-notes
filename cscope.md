@@ -1,0 +1,3 @@
+## cscope
+
+:help cscope-suggestions
