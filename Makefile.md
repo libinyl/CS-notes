@@ -69,3 +69,7 @@ $(wildcard *.c)
 
 获取当前目录.c 文件列表
 
+
+ranlib 更新库索引表
+
+patsubst

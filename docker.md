@@ -2,9 +2,10 @@
 
 start
 
-
 - run: 在没有容器运行的情况下,创建容器并运行,并启动进程.
 - exec: 在现有容器中运行命令
+- -i: 标准输入始终打开
+- -t: 分配一个伪终端并绑定在容器标准输入上
 
 ## 查看当前启动的 docker 及状态
 
@@ -36,3 +37,7 @@ cp -r /tmp/tmp1/libin8/.bash* /home/libin8/
 chown -R libin8:libin8 /home/libin8
 passwd libin8
 visudo
+
+## 常用命令
+
+docker exec -it lcsd_statistic_1 bash

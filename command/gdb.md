@@ -116,10 +116,10 @@ info proc map
 
 ```
 远程
-gdbserver ip:port  appname(进程名)
+gdbserver ip:port  appname(进程名) [参数列表]
 本地
 先gdb,
-然后 target remote [ip]:[port]
+然后 target remote [ip]:[port] 
 target remote 是关键字 不是可替代参数
 ```
 
@@ -138,6 +138,10 @@ show directories
 show substitute-path 
 info sources
 ```
+
+## 设置替换路径
+
+set substitute-path from_path to_path
 
 ## 实模式下查看当前执行指令
 ```
@@ -262,6 +266,8 @@ schedule-multiple | 多进程调度
 record mode | 记录模式
 replay mode | 回放模式
 
+thread apply all bt
+
 ## 窗口布局
 
 ## 跳过代码
@@ -272,3 +278,20 @@ sudo yum install centos-release-scl
 sudo yum install devtoolset-8
 
 ../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include
+
+## 查看环境变量
+
+show environment 
+
+## 查看动态链接库
+
+info sharedlibrary 
+
+
+## 查看运行时共享库搜索路径
+
+show solib-search-path
+
+## -W1 rpath
+
+https://stackoverflow.com/questions/6562403/i-dont-understand-wl-rpath-wl

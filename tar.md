@@ -38,3 +38,6 @@ tar.bz2 | tar -xjvf
 tar.Z | tar -xZvf
 xz | xz -d
 
+# 打包
+
+tar -zcvf  file.tar.gz  file1  file2
