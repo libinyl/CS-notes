@@ -37,3 +37,5 @@ ps -axuw
 7. TTY
 8. STAT START   
 9. TIME COMMAND
+
+## 查看启动时间

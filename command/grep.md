@@ -22,3 +22,7 @@ main
 
 服务监控: http://build17.kill.corp.qihoo.net:8360/build/index.php
 
+## 正则
+
+-E
+
