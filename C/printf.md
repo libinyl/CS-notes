@@ -60,3 +60,22 @@ int main()
 - snprintf 系列：非标准库，由于限制了输出 buf 的长度所以更加安全。sprintf可能有缓冲区溢出风险.
 
 参考：[Stack Overflow](https://stackoverflow.com/questions/1485805/whats-the-difference-between-the-printf-and-vprintf-function-families-and-when)
+
+## 类型辨析
+
+类型符号 | 含义
+------- | -------
+d |  以十进制形式输出带符号整数(正数不输出符号)
+o |  以八进制形式输出无符号整数(不输出前缀0)
+x,X |  以十六进制形式输出无符号整数(不输出前缀Ox)
+u |  以十进制形式输出无符号整数
+f |  以小数形式输出单、双精度实数
+e,E |  以指数形式输出单、双精度实数
+g,G |  以%f或%e中较短的输出宽度输出单、双精度实数
+c |  输出单个字符
+s |  输出字符串
+p |  输出指针地址
+lu |  32位无符号整数
+llu |  64位无符号整数
+
+输出unsigned short ,unsigned int 一般用 %u
