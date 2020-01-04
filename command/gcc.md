@@ -40,3 +40,19 @@ i386-elf-gcc -v
 
 
 如果是库函数,如 sin 尝试直接 man sin
+
+## Wl
+
+使用-Wl直接向ld传递参数
+
+gcc -Wl,key1,value1,key2,value2,key3,value3
+
+包括-Wl在内全部都是以逗号分隔。等号之间不要有空格!
+
+上面等价于：
+
+ld key1=value1 key2=value2 key3=value3
+
+-Wl,--whole-archive -lqoslib -Wl,-no-whole-archive 两个 wl 要成对出现:https://gcc.gnu.org/ml/gcc-help/2009-09/msg00108.html
+
+## -shared
