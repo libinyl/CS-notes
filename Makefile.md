@@ -73,3 +73,7 @@ $(wildcard *.c)
 ranlib 更新库索引表
 
 patsubst
+
+## 重定向
+
+make xxx > tmp.txt 2>&1
