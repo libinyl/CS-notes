@@ -74,3 +74,18 @@ set -x 追踪代码执行
 
 ## 例子
 
+## 内置
+
+dirname 当前目录
+
+## 查看某程序是否启动
+
+ps aux | grep nginx | grep -v -q grep
+
+if [$? -ne 0] 则已启动
+
+
+获取本地 ip
+
+
+local_ip=`LC_ALL=C ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'`

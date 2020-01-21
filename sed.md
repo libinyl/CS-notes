@@ -1,3 +1,14 @@
 ## sed
 
-sed -i 
+:qstream editor
+
+sed -i (in-place, 原地修改)
+
+
+sed -i 's/原字符串/新字符串/' /home/1.txt
+sed -i 's/原字符串/新字符串/g' /home/1.txt
+
+中间的 's/aa/bb' 即将原来的 aa 替换为 bb, 加上 g 之后就是 global
+
+## 正则
+

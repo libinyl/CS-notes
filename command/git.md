@@ -63,6 +63,8 @@ git reset hash值
 git branch -a 
 //切换远程分支
 git checkout -b 本地分支名 远程库/远程分支名
+// 新建分支
+git push origin newbranchname
 ```
 
 ## 对比远程与本地的差异

@@ -77,3 +77,13 @@ patsubst
 ## 重定向
 
 make xxx > tmp.txt 2>&1
+
+## 常用
+
+gcc 版本:
+
+GCCVERSION=`gcc -v 2>&1|tail -1 | awk '{print $3}' `
+
+idc:
+
+IDC=`hostname|awk -F '.' '{print $3}'`

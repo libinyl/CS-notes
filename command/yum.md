@@ -31,4 +31,10 @@ https://www.cnblogs.com/fps2tao/p/7883782.html
  命令：yum provides~
 
 
-## 升级
+## 更新镜像源
+
+清除缓存：yum clean all
+生成缓存：yum makecache
+
+## 查看 rpm 包信息
+

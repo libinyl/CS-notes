@@ -21,4 +21,4 @@
 
 尝试测试: ab -c 1 http://predis1.safe.bjcc.qihoo.net:8889/cloudquery.php
 
-了解 php 分析测试代码
+l
