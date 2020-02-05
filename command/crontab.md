@@ -21,4 +21,15 @@
 
 尝试测试: ab -c 1 http://predis1.safe.bjcc.qihoo.net:8889/cloudquery.php
 
-l
+## 查看所有定时任务
+
+/etc/cron.d/
+
+查看某个用户的定时任务
+
+crontab -l -u username
+
+## 查看所有用户的定时任务
+
+cat /etc/passwd | cut -f 1 -d : |xargs -I {} crontab -l -u {}
+

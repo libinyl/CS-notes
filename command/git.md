@@ -65,6 +65,10 @@ git branch -a
 git checkout -b 本地分支名 远程库/远程分支名
 // 新建分支
 git push origin newbranchname
+// 删除本地分支
+git branch -d localBranchName
+// 删除远程分支
+git push origin --delete remoteBranchName
 ```
 
 ## 对比远程与本地的差异

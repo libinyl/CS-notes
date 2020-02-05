@@ -41,3 +41,6 @@ xz | xz -d
 # 打包
 
 tar -zcvf  file.tar.gz  file1  file2
+
+# 解压
+

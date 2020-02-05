@@ -18,6 +18,33 @@
     "workbench.editor.highlightModifiedTabs": true
 }
 ```
+
+
+## C++
+
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/rh/devtoolset-2/root/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
+
+
+includePath: 设定为 makefile 里的-I
+browsepath: 
+
+https://code.visualstudio.com/docs/cpp/faq-cpp
+
 ## 快捷键
 
 功能 | 按键

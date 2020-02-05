@@ -83,3 +83,7 @@ mysql -uroot -p --protocol=tcp --host=127.0.0.1 --port=3306
 
 ## 配置文件自动还原问题
 
+## 配置目录
+
+/usr/local/nginx/conf
+
