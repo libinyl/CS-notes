@@ -14,3 +14,7 @@ ulimit -c unlimited
 ```
 gdb 可执行文件 core文件
 ```
+
+查看路径
+
+vim /proc/sys/kernel/core_pattern

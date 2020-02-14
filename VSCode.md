@@ -27,7 +27,9 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                ..
             ],
             "defines": [],
             "compilerPath": "/opt/rh/devtoolset-2/root/usr/bin/gcc",

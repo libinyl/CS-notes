@@ -26,3 +26,5 @@ main
 
 -E
 
+-o, --only-matching
+

@@ -68,6 +68,9 @@ $? | 上个命令的退出状态，或函数的返回值，我们将在《Shell 
 $$ | 当前 Shell 进程 ID。对于 Shell 脚本，就是这些脚本所在的进程 ID。
 
 
+=~ 是否能用之后的正则匹配到
+
+
 ## set
 
 set -x 追踪代码执行
@@ -93,3 +96,8 @@ local_ip=`LC_ALL=C ifconfig  | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: 
 ## 重定向权限不足
 
 sudo sh -c 'echo abc > test.asc'
+
+统计文件数量
+
+ls -l|grep "^-"| wc -l
+

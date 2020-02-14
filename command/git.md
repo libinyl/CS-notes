@@ -64,6 +64,7 @@ git branch -a
 //切换远程分支
 git checkout -b 本地分支名 远程库/远程分支名
 // 新建分支
+git checkout -b xxx
 git push origin newbranchname
 // 删除本地分支
 git branch -d localBranchName
@@ -117,3 +118,7 @@ git config --global http.postBuffer 524288000
  | show | Show various types of objects
  | status | Show the working tree status
  | tag | Create, list, delete or verify a tag object signed with GPG
+
+
+ ## merge
+

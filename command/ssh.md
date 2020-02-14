@@ -12,10 +12,22 @@ id_rsa  id_rsa.pub  known_hosts
 cat ~/.ssh/id_rsa.pub | ssh username@server.address.com 'cat >> ~/.ssh/authorized_keys'
 ```
 
+ssh-copy-id user@server
+
+远程执行命令  
+
+
+ssh user@server "xxx && "
+
+远程执行 sudo 命令
+
+ssh -t user@server "xxx && "
+
+
 ## 配置 vscode ssh 免密
 
 
-
+-i:
 
 ## 防止连接超时
 

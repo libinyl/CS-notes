@@ -56,3 +56,4 @@ ld key1=value1 key2=value2 key3=value3
 -Wl,--whole-archive -lqoslib -Wl,-no-whole-archive 两个 wl 要成对出现:https://gcc.gnu.org/ml/gcc-help/2009-09/msg00108.html
 
 ## -shared
+
