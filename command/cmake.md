@@ -19,3 +19,12 @@ mac 上下载再传过去
 
 ## clion 最高只支持 3.15.x
 
+
+
+## 变量
+
+PROJECT_BINARY_DIR=全路径/build
+
+PROJECT_SOURCE_DIR=全路径/src
+
+https://www.jianshu.com/p/aaa19816f7ad

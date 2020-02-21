@@ -168,3 +168,47 @@ https://www.jianshu.com/p/2bc807fc6ff9
 如果发生超时重传且性能影响不可忽略,可以缩小RTO来缓解.
 
 - **快速重传**: 当收到比期望的 seq 号大的包时,没收到 1 个就回复一个对期望seq的ack,即重复确认. 当发送方收到 3 此或以上的重复确认时,就意识到相应的包已经丢了,立即重传.
+
+## timewait
+
+https://vincent.bernat.ch/en/blog/2014-tcp-time-wait-state-linux
+
+## 协议栈
+
+https://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/
+
+
+一，time_wait概念
+当你关闭一个socket时，主动关闭一端的socket将进入TIME_WAIT状态（有可能，对方没收到ack，重发fin，这时需要再次重发最后的ACK，所以维持一个TIME_WAIT状态），而被动关闭一方则转入CLOSED状态，这的确能够保证所有的数据都被传输。
+
+（1）如果没有TIME_WAIT状态时，就会出现如下的情况。
+
+现在有一个新的连接被建立起来，使用的IP地址与端口与先前的完全相同。还假定原先的连接中有数据报残存于网络之中，这样新的连接收到的数据报中有可能是先前连接的数据包。
+
+为了防止这一点，TCP不允许从处于TIME_WAIT状态的socket建立一个连接。处于TIME_WAIT状态的socket在等待两倍的MSL时间以后（之所以是两倍的MSL，是由于MSL是一个数据报在网络中单向发出到认定丢失的时间，
+
+一个数据报有可能在发送图中或是其响应过程中成为残余数据报，确认一个数据报及其响应的丢弃的需要两倍的MSL），将会转变为CLOSED状态。
+
+（2）如果处于TIME_WAIT状态的时间被缩短了（比如：连接设置了REUSE），并且，主动关闭端发送的最后一个fin ack包丢失，新创建连接如果使用IP地址和端口与先前的完全相同，seq number匹配老的连接，发送的SYN包会被对方回应RST，于是创建连接会失败。
+
+2.TIME_WAIT出现的场所
+time_wait经常出现在服务端。
+
+（1）web server（nginx/apache）
+
+（2）proxy server(nginx/vanish)
+
+（3） Other servers(mysql,etc)。
+
+3.解决time_wait的办法：
+（1）通过修改系统设置net.ipv4.ip_local_port_range，增加可用的端口资源
+
+效果：减少新连接和老连接使用的ip端口都一样可能性。
+
+（2）设置net.ipv4.tcp_tw_reuse，net.ipv4.tcp_timestamps（需要对端也启用），快速重用。
+
+效果：timestamp太旧会被丢弃；新的SYN包会被应答FIN（非RST）；对端收到FIN会发送RST；一秒后重发SYN；
+
+（3）设置net.ipv4.tcp_tw_recycle，           效果：TIME_WAIT 快速回收
+
+另：NAT upstream 服务慎用（expire RTO & RTT）；outgoing / incoming 同时作用 

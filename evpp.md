@@ -1,11 +1,9 @@
 ## evpp
 
-Install glog ok
-Install libevent-2.x ok
-Install gtest 
-Install boost
-Install gflags
-Install redhat-rpm-config
+## 单元测试
+
+evpp/test/event_loop_test.cc
+
+参考 7.8.3 章 定时器接口
 
 
-sudo yum install  libevent-devel gtest-devel boost-devel redhat-rpm-config
