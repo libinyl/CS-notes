@@ -25,3 +25,11 @@ https://blog.csdn.net/qq_31833457/article/details/78495354
 
 很多链接进来，epoll 会把他们都监视起来，然后像拨开关一样，谁有数据就拨向谁，然后调用相应的代码处理。
 
+
+
+https://suchprogramming.com/epoll-in-3-easy-steps/
+
+水平触发: 若一次读取数据没有读完,下次仍可读: 
+边缘触发: 若一次读取数据没有读完,下次不可读: 只在状态改变时传递数据
+
+select 和 poll 只支持水平触发.
