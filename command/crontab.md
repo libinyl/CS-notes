@@ -33,3 +33,4 @@ crontab -l -u username
 
 cat /etc/passwd | cut -f 1 -d : |xargs -I {} crontab -l -u {}
 
+http://tldp.org/LDP/GNU-Linux-Tools-Summary/html/scheduling.html

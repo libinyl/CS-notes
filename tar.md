@@ -36,11 +36,14 @@ tar | tar -xvf
 tar.gz | tar -xzvf
 tar.bz2 | tar -xjvf
 tar.Z | tar -xZvf
+.tar | 
 xz | xz -d
 
 # 打包
 
 tar -zcvf  file.tar.gz  file1  file2
+
+tar -czf file.tar.gz (目录名)  ;压缩并打包目录
 
 # 解压
 

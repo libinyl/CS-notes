@@ -64,3 +64,10 @@ vim - 的意思:
 当前文件所有a 替换为 b
 
 :%s/a/b/g
+
+## 中文乱码
+
+set encoding=utf-8
+
+
+set paste

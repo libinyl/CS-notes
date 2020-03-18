@@ -33,3 +33,15 @@ https://suchprogramming.com/epoll-in-3-easy-steps/
 边缘触发: 若一次读取数据没有读完,下次不可读: 只在状态改变时传递数据
 
 select 和 poll 只支持水平触发.
+
+1. Set up your accept socket ...
+2. Add to epoll.
+3. enter wait loop:
+   1. Check whether event is on accept socket, or normal socket
+   2. If accept socket, accept connection, add to epoll, go back to 3
+   3. If event on normal socket for reading, read X bytes, save to write buffer, and enable write event on epoll for socket, go back to 3
+   4. If event on normal socket for writing, write bytes from buffer to network, disable write event if write buffer is empty, go back to 3.
+   5. If an error occurs remove the socket from epoll
+4. There is no fourth step ... the program should loop forever.
+
+很好地解释: https://medium.com/@copyconstruct/the-method-to-epolls-madness-d9d2d6378642

@@ -22,4 +22,5 @@
 ```C
 netstat -atnp | grep 8081
 netstat -anp | grep 8081
+常用: -ntp, -ntpl
 ```
