@@ -6,6 +6,11 @@
 
 go 环境: https://howistart.org/posts/go/1/
 
+## 调试
+
+go build -gcflags "all=-N -l" xxx
+dlv --listen=:2345 --headless=true --api-version=2 --accept-multiclient exec ./xxx
+
 ## 代码组织
 
 包: 同一个包下的源文件一起编译,每个源文件的符号对同包其他文件可见.

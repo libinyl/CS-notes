@@ -17,3 +17,8 @@ find . -type f -perm +111 -print
 find . -name '*xxx*'
 
 https://www.cnblogs.com/shenqidu/p/10615593.html
+
+ 
+## 统计行数
+
+find . -name '*.c' | xargs wc -l;

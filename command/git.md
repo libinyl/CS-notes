@@ -87,7 +87,13 @@ git diff HEAD 显示工作目录与git仓库之间的差异
 
 ## 报错处理
 
-- The remote end hung up unexpectedly while git cloning
+cd .; git clone -- https://github.com/go-delve/delve /Users/libinyl/go/src/github.com/go-delve/delve
+Cloning into '/Users/libinyl/go/src/github.com/go-delve/delve'...
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+fatal: the remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+package github.com/go-delve/delve/cmd/dlv: exit status 128
 
 git config --global http.postBuffer 524288000
 
@@ -140,3 +146,10 @@ function proml {
 }
 proml
 
+## 从 add 中移除
+
+git rm --cached <file-name>
+
+## 统计代码行数
+
+git shortlog -sn
