@@ -2,8 +2,6 @@
 
 go 环境: https://howistart.org/posts/go/1/
 
-## 工程结构
-
 ## 调试
 
 go build -gcflags "all=-N -l" xxx
