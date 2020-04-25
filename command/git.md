@@ -15,8 +15,15 @@ git push -u origin master
 修改 origin:
 
 ```
-git remote origin set-url [url]
+git remote set-url origin /original/repo (用于 pull)
+git remote set-url --push origin /your/fork (用于 push)
 ```
+
+增删 remote
+
+git remote add origin git@github.com:libinyl/unp1.git
+git remote remove origin
+
 
 ## 回退单个文件
 
@@ -70,6 +77,7 @@ git push origin newbranchname
 git branch -d localBranchName
 // 删除远程分支
 git push origin --delete remoteBranchName
+// 查看 pull 或 fetch 的默认分支
 ```
 
 ## 对比远程与本地的差异
@@ -131,6 +139,8 @@ git config --global http.postBuffer 524288000
 ## stash
 
 git stash pop stash@{$num} 
+
+git stash show
 
 
 bash 中:

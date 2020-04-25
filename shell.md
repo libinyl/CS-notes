@@ -118,3 +118,12 @@ Supported escape sequences:
  ~?   - this message
  ~~   - send the escape character by typing it twice
 (Note that escapes are only recognized immediately after newline.)
+
+代码样例
+
+#!/bin/bash  
+  
+for((i=0;i<10;i++));  
+do   
+echo $(expr $i \* 3 + 1);  
+done

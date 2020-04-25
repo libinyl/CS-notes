@@ -36,3 +36,4 @@ ls -F appends symbols to filenames. These symbols show useful information about 
 
 ## 按时间排序
 
+## 按名称排序

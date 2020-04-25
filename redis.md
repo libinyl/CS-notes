@@ -1,5 +1,15 @@
 ## redis
 
+## 命令行登陆
+
+redis-cli -h ip -p 6379 
+
+## 服务端启动
+
+redis-server
+
+## 其他
+
 配置文件redis.conf 路径:
 
 sudo find / -type f -name 'redis.conf'
@@ -48,3 +58,16 @@ sudo find / -type f -name 'redis.conf'
 获取范围内所有元素 | `lrange` list1 0 -1(倒数第 1 个)
 阻塞获取,100秒超时| blpop list1 100
 
+
+## 问题
+
+- Authentication required.
+
+auth "password"
+
+## homebrew
+
+To have launchd start redis now and restart at login:
+  brew services start redis
+Or, if you don't want/need a background service you can just run:
+  redis-server /usr/local/etc/redis.conf
