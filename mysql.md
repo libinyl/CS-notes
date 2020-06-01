@@ -4,6 +4,16 @@ mysql 登陆:
 
 mysql -u root -h 127.0.0.1
 
+
+use mysql;
+select user, host from user;
+
+查看是否已经有 user=‘root’ 的 host 变成 %
+
+记得最后要使用命令 flush privileges 进行刷新，不然还是
+
+service mariadb start
+
 ## 启动
 
 https://www.jianshu.com/p/d3f7e7402449
