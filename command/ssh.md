@@ -1,6 +1,9 @@
 ## 设置 ssh-key 免密登录
 参考 https://www.cnblogs.com/hanwen1014/p/9048717.html
 
+
+Shared connection to xxx closed
+
 1. 服务器生成密钥`ssh-keygen`,结果生成到 `~/.ssh`下:
 ```
 root@MyServer:~/.ssh# ls
