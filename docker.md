@@ -11,6 +11,10 @@ start
 
 docker ps -a
 
+## 退出但不关闭容器
+
+Ctrl+P+Q
+
 ## 查看镜像列表 
 
 docker images

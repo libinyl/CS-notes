@@ -1,0 +1,1046 @@
+libinyl@LARYLI-MB0: ~
+$ brew install mycli                                                                                                                  [11:21:45]
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/openssl%401.1-1.1.1g.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/readline-8.0.4.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/sqlite-3.32.3.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/xz-5.2.5.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/python%403.8-3.8.3.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/mycli-1.21.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Installing dependencies for mycli: openssl@1.1, readline, sqlite, xz and python@3.8
+==> Installing mycli dependency: openssl@1.1
+==> Pouring openssl@1.1-1.1.1g.catalina.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl@1.1/certs
+
+and run
+  /usr/local/opt/openssl@1.1/bin/c_rehash
+
+openssl@1.1 is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides LibreSSL.
+
+If you need to have openssl@1.1 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openssl@1.1 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+  export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
+For pkg-config to find openssl@1.1 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/openssl@1.1/1.1.1g: 8,059 files, 18MB
+==> Installing mycli dependency: readline
+==> Pouring readline-8.0.4.catalina.bottle.tar.gz
+==> Caveats
+readline is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides BSD libedit.
+
+For compilers to find readline you may need to set:
+  export LDFLAGS="-L/usr/local/opt/readline/lib"
+  export CPPFLAGS="-I/usr/local/opt/readline/include"
+
+For pkg-config to find readline you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/readline/8.0.4: 48 files, 1.5MB
+==> Installing mycli dependency: sqlite
+==> Pouring sqlite-3.32.3.catalina.bottle.tar.gz
+==> Caveats
+sqlite is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have sqlite first in your PATH run:
+  echo 'export PATH="/usr/local/opt/sqlite/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find sqlite you may need to set:
+  export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+  export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+For pkg-config to find sqlite you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/sqlite/3.32.3: 11 files, 4MB
+==> Installing mycli dependency: xz
+==> Pouring xz-5.2.5.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/xz/5.2.5: 92 files, 1.1MB
+==> Installing mycli dependency: python@3.8
+==> Pouring python@3.8-3.8.3.catalina.bottle.tar.gz
+==> /usr/local/Cellar/python@3.8/3.8.3/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python
+==> /usr/local/Cellar/python@3.8/3.8.3/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python
+==> /usr/local/Cellar/python@3.8/3.8.3/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python
+==> Caveats
+Python has been installed as
+  /usr/local/opt/python@3.8/bin/python3
+
+You can install Python packages with
+  /usr/local/opt/python@3.8/bin/pip3 install <package>
+They will install into the site-package directory
+  /usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+
+python@3.8 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have python@3.8 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/python@3.8/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find python@3.8 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
+
+For pkg-config to find python@3.8 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/python@3.8/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/python@3.8/3.8.3: 4,125 files, 63MB
+==> Installing mycli
+==> Pouring mycli-1.21.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/mycli/1.21.1: 1,308 files, 14MB
+==> Upgrading 58 dependents:
+atk 2.32.0_1 -> 2.36.0, atk 2.32.0_1 -> 2.36.0, atk 2.32.0_1 -> 2.36.0, atk 2.32.0_1 -> 2.36.0, cairo 1.16.0_2 -> 1.16.0_3, cairo 1.16.0_2 -> 1.16.0_3, cairo 1.16.0_2 -> 1.16.0_3, cairo 1.16.0_2 -> 1.16.0_3, cgdb 0.7.0_1 -> 0.7.1, ffmpeg 4.1.4_1 -> 4.3_2, ffmpeg 4.1.4_1 -> 4.3_2, ffmpeg 4.1.4_1 -> 4.3_2, ffmpeg 4.1.4_1 -> 4.3_2, gdk-pixbuf 2.38.1_1 -> 2.40.0_1, gdk-pixbuf 2.38.1_1 -> 2.40.0_1, gdk-pixbuf 2.38.1_1 -> 2.40.0_1, gdk-pixbuf 2.38.1_1 -> 2.40.0_1, glib 2.60.5 -> 2.64.3, glib 2.60.5 -> 2.64.3, glib 2.60.5 -> 2.64.3, glib 2.60.5 -> 2.64.3, gnutls 3.6.8 -> 3.6.14, graphviz 2.40.1_1 -> 2.44.0, graphviz 2.40.1_1 -> 2.44.0, graphviz 2.40.1_1 -> 2.44.0, graphviz 2.40.1_1 -> 2.44.0, gts 0.7.6_1 -> 0.7.6_2, gts 0.7.6_1 -> 0.7.6_2, gts 0.7.6_1 -> 0.7.6_2, gts 0.7.6_1 -> 0.7.6_2, harfbuzz 2.5.3 -> 2.6.8, harfbuzz 2.5.3 -> 2.6.8, harfbuzz 2.5.3 -> 2.6.8, harfbuzz 2.5.3 -> 2.6.8, libevent 2.1.10 -> 2.1.11_1, libssh2 1.8.2 -> 1.9.0_1, libxml2 2.9.9_2 -> 2.9.10_1, libxml2 2.9.9_2 -> 2.9.10_1, libxml2 2.9.9_2 -> 2.9.10_1, libxml2 2.9.9_2 -> 2.9.10_1, meson 0.51.1 -> 0.54.3_1, meson 0.51.1 -> 0.54.3_1, meson 0.51.1 -> 0.54.3_1, meson 0.51.1 -> 0.54.3_1, mysql@5.7 5.7.26 -> 5.7.29, nginx 1.17.1 -> 1.19.0, pango 1.42.4_2 -> 1.44.7, pango 1.42.4_2 -> 1.44.7, pango 1.42.4_2 -> 1.44.7, pango 1.42.4_2 -> 1.44.7, python 3.7.6_1 -> 3.7.7, python 3.7.6_1 -> 3.7.7, python 3.7.6_1 -> 3.7.7, python 3.7.6_1 -> 3.7.7, rtmpdump 2.4+20151223 -> 2.4+20151223_1, tmux 2.9a -> 3.1b, unbound 1.9.2 -> 1.10.1, wget 1.20.3 -> 1.20.3_2
+==> Upgrading libxml2 2.9.9_2 -> 2.9.10_1
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libxml2-2.9.10_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libxml2-2.9.10_1.catalina.bottle.tar.gz
+==> Caveats
+libxml2 is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have libxml2 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find libxml2 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+  export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+
+For pkg-config to find libxml2 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/libxml2/2.9.10_1: 280 files, 10.5MB
+Removing: /usr/local/Cellar/libxml2/2.9.9_2... (281 files, 10.5MB)
+==> Upgrading mysql@5.7 5.7.26 -> 5.7.29
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/mysql%405.7-5.7.29.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring mysql@5.7-5.7.29.catalina.bottle.tar.gz
+==> Caveats
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -uroot
+
+mysql@5.7 is keg-only, which means it was not symlinked into /usr/local,
+because this is an alternate version of another formula.
+
+If you need to have mysql@5.7 first in your PATH run:
+  echo 'export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find mysql@5.7 you may need to set:
+  export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+  export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+
+For pkg-config to find mysql@5.7 you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
+
+
+To have launchd start mysql@5.7 now and restart at login:
+  brew services start mysql@5.7
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/mysql@5.7/bin/mysql.server start
+==> Summary
+🍺  /usr/local/Cellar/mysql@5.7/5.7.29: 319 files, 232.3MB
+Removing: /usr/local/Cellar/mysql@5.7/5.7.26... (320 files, 231.8MB)
+==> Upgrading libxml2 2.9.10_1 -> 2.9.10_1
+==> Upgrading libxml2 2.9.10_1 -> 2.9.10_1
+==> Upgrading libxml2 2.9.10_1 -> 2.9.10_1
+==> Upgrading cairo 1.16.0_2 -> 1.16.0_3
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/freetype-2.10.2.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gettext-0.20.2_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libffi-3.3.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/pcre-8.44.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/glib-2.64.3.catalina.bottle.tar.gz
+##O#- #
+curl: (22) The requested URL returned error: 404
+Error: Failed to download resource "glib"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/glib-2.64.3.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/6164294a75541c278f3863b111791376caa3ad26/glib/hardcoded-paths.diff
+######################################################################## 100.0%
+==> Downloading https://download.gnome.org/sources/glib/2.64/glib-2.64.3.tar.xz
+==> Downloading from https://mirrors.nju.edu.cn/gnome/sources/glib/2.64/glib-2.64.3.tar.xz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/pixman-0.40.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/cairo-1.16.0_3.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Installing dependencies for cairo: freetype, gettext, libffi, pcre, glib and pixman
+==> Installing cairo dependency: freetype
+==> Pouring freetype-2.10.2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/freetype/2.10.2: 61 files, 2.3MB
+==> Installing cairo dependency: gettext
+==> Pouring gettext-0.20.2_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gettext/0.20.2_1: 1,923 files, 18.6MB
+==> Installing cairo dependency: libffi
+==> Pouring libffi-3.3.catalina.bottle.tar.gz
+==> Caveats
+libffi is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+For compilers to find libffi you may need to set:
+  export LDFLAGS="-L/usr/local/opt/libffi/lib"
+  export CPPFLAGS="-I/usr/local/opt/libffi/include"
+
+For pkg-config to find libffi you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/libffi/3.3: 16 files, 489.4KB
+==> Installing cairo dependency: pcre
+==> Pouring pcre-8.44.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre/8.44: 204 files, 5.5MB
+==> Installing cairo dependency: glib
+==> Pouring glib-2.64.3.catalina.bottle.tar.gz
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/cc5b710c05d56f2a97f6d4920fa8ed26b167679809a0e5f07a4d3f4ea6e04946--glib-2.64.3.catalina.bottle.tar.gz'
+Error: Failure while executing; `tar xof /Users/libinyl/Library/Caches/Homebrew/downloads/cc5b710c05d56f2a97f6d4920fa8ed26b167679809a0e5f07a4d3f4ea6e04946--glib-2.64.3.catalina.bottle.tar.gz -C /var/folders/bv/y64htx9n21g5n62t4xwqsfwr0000gn/T/d20200716-11732-os7gt8` exited with 1. Here's the output:
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/cc5b710c05d56f2a97f6d4920fa8ed26b167679809a0e5f07a4d3f4ea6e04946--glib-2.64.3.catalina.bottle.tar.gz'
+
+Warning: Bottle installation failed: building from source.
+==> Installing dependencies for glib: ninja, meson and pkg-config
+==> Installing glib dependency: ninja
+==> Pouring ninja-1.10.0.catalina.bottle.tar.gz
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/f70d9284fc2aab36a8e8f7ee3c8511415926b9d7aa21b0d7ce4390561cb40a95--ninja-1.10.0.catalina.bottle.tar.gz'
+Error: Failure while executing; `tar xof /Users/libinyl/Library/Caches/Homebrew/downloads/f70d9284fc2aab36a8e8f7ee3c8511415926b9d7aa21b0d7ce4390561cb40a95--ninja-1.10.0.catalina.bottle.tar.gz -C /var/folders/bv/y64htx9n21g5n62t4xwqsfwr0000gn/T/d20200716-11732-1e6ql4w` exited with 1. Here's the output:
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/f70d9284fc2aab36a8e8f7ee3c8511415926b9d7aa21b0d7ce4390561cb40a95--ninja-1.10.0.catalina.bottle.tar.gz'
+
+Warning: Bottle installation failed: building from source.
+==> Downloading https://github.com/ninja-build/ninja/archive/v1.10.0.tar.gz
+==> Downloading from https://codeload.github.com/ninja-build/ninja/tar.gz/v1.10.0
+######################################################################## 100.0%
+==> python configure.py --bootstrap
+==> ./configure.py
+==> ./ninja ninja_test
+==> ./ninja_test --gtest_filter=-SubprocessTest.SetWithLots
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/ninja/1.10.0: 7 files, 317.0KB, built in 50 seconds
+==> Installing glib dependency: meson
+==> Pouring meson-0.54.3_1.catalina.bottle.tar.gz
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/3edf8d874eaf27d6359cc5f0d4afe5cc0b8fd853bf4ee4211b9dbb5c6c385497--meson-0.54.3_1.catalina.bottle.tar.gz'
+Error: Failure while executing; `tar xof /Users/libinyl/Library/Caches/Homebrew/downloads/3edf8d874eaf27d6359cc5f0d4afe5cc0b8fd853bf4ee4211b9dbb5c6c385497--meson-0.54.3_1.catalina.bottle.tar.gz -C /var/folders/bv/y64htx9n21g5n62t4xwqsfwr0000gn/T/d20200716-11732-szp5u0` exited with 1. Here's the output:
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/3edf8d874eaf27d6359cc5f0d4afe5cc0b8fd853bf4ee4211b9dbb5c6c385497--meson-0.54.3_1.catalina.bottle.tar.gz'
+
+Warning: Bottle installation failed: building from source.
+==> Downloading https://github.com/mesonbuild/meson/releases/download/0.54.3/meson-0.54.3.tar.gz
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/19784232/b3101000-af45-11ea-836f-650193a7e57f?X-Amz-Algorith
+######################################################################## 100.0%
+==> /usr/local/opt/python@3.8/bin/python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/meson/0.54.3_1 --install-scrip
+🍺  /usr/local/Cellar/meson/0.54.3_1: 314 files, 4.2MB, built in 22 seconds
+==> Installing glib dependency: pkg-config
+==> Pouring pkg-config-0.29.2_3.catalina.bottle.tar.gz
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/9feea96a14007eb96ca0923c98f72568dc24ec58d9bae72332b97ca6b60aa43d--pkg-config-0.29.2_3.catalina.bottle.tar.gz'
+Error: Failure while executing; `tar xof /Users/libinyl/Library/Caches/Homebrew/downloads/9feea96a14007eb96ca0923c98f72568dc24ec58d9bae72332b97ca6b60aa43d--pkg-config-0.29.2_3.catalina.bottle.tar.gz -C /var/folders/bv/y64htx9n21g5n62t4xwqsfwr0000gn/T/d20200716-11732-15dtccy` exited with 1. Here's the output:
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/9feea96a14007eb96ca0923c98f72568dc24ec58d9bae72332b97ca6b60aa43d--pkg-config-0.29.2_3.catalina.bottle.tar.gz'
+
+Warning: Bottle installation failed: building from source.
+==> Downloading https://pkgconfig.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+######################################################################## 100.0%
+==> ./configure --prefix=/usr/local/Cellar/pkg-config/0.29.2_3 --disable-host-tool --with-internal-glib --with-pc-path=/usr/local/lib/pkgconfig:/
+==> make
+==> make install
+🍺  /usr/local/Cellar/pkg-config/0.29.2_3: 11 files, 623.9KB, built in 1 minute 29 seconds
+==> Patching
+==> Applying hardcoded-paths.diff
+patching file gio/gdbusprivate.c
+Hunk #1 succeeded at 2471 (offset 364 lines).
+Hunk #2 succeeded at 2481 (offset 364 lines).
+patching file gio/xdgmime/xdgmime.c
+patching file glib/gutils.c
+Hunk #1 succeeded at 2497 (offset 417 lines).
+Warning: Calling Language::Python.rewrite_python_shebang is deprecated! Use Utils::Shebang.rewrite_shebang and Shebang.python_shebang_rewrite_info(python_path) instead.
+Please report this issue to the homebrew/core tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
+  /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/glib.rb:34
+
+==> meson --prefix=/usr/local/Cellar/glib/2.64.3 --libdir=/usr/local/Cellar/glib/2.64.3/lib -Diconv=auto -Dgio_module_dir=/usr/local/lib/gio/modu
+==> ninja -v
+Warning: Calling Language::Python.rewrite_python_shebang is deprecated! Use Utils::Shebang.rewrite_shebang and Shebang.python_shebang_rewrite_info(python_path) instead.
+Please report this issue to the homebrew/core tap (not Homebrew/brew or Homebrew/core), or even better, submit a PR to fix it:
+  /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/glib.rb:51
+
+==> ninja install -v
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/glib/2.64.3: 436 files, 15.7MB, built in 1 minute 43 seconds
+==> Installing cairo dependency: pixman
+==> Pouring pixman-0.40.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pixman/0.40.0: 14 files, 1.3MB
+==> Installing cairo
+==> Pouring cairo-1.16.0_3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/cairo/1.16.0_3: 117 files, 5.7MB
+Removing: /usr/local/Cellar/cairo/1.16.0_2... (117 files, 5.5MB)
+==> Upgrading cairo 1.16.0_3 -> 1.16.0_3
+==> Upgrading cairo 1.16.0_3 -> 1.16.0_3
+==> Upgrading cgdb 0.7.0_1 -> 0.7.1
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/cgdb-0.7.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring cgdb-0.7.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/cgdb/0.7.1: 9 files, 521.8KB
+Removing: /usr/local/Cellar/cgdb/0.7.0_1... (10 files, 515.5KB)
+==> Upgrading ffmpeg 4.1.4_1 -> 4.3_2
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/aom-2.0.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/dav1d-0.7.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/frei0r-1.7.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gmp-6.2.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libidn2-2.3.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtasn1-4.16.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/nettle-3.6.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/p11-kit-0.23.20_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libevent-2.1.11_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/unbound-1.10.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+#=#=#
+curl: (22) The requested URL returned error: 404
+Error: Failed to download resource "gnutls"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.14.tar.xz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/fribidi-1.0.9.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/graphite2-1.3.14.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/icu4c-67.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/harfbuzz-2.6.8.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libbluray-1.2.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvidstab-1.1.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libogg-1.3.4.catalina.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvpx-1.8.2.catalina.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/jpeg-9d.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtiff-4.1.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/little-cms2-2.11.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rav1e-0.3.3.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rtmpdump-2.4%2B20151223_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/flac-1.3.3.catalina.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/sdl2-2.0.12_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/snappy-1.1.8.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/srt-1.4.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/giflib-5.2.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/webp-1.1.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/leptonica-1.79.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/tesseract-4.1.1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x264-r3011.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x265-3.4.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/xvid-1.3.7.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/ffmpeg-4.3_2.catalina.bottle.tar.gz
+####################################################################      95.0%
+curl: (92) HTTP/2 stream 0 was not closed cleanly: INTERNAL_ERROR (err 2)
+Error: Failed to download resource "ffmpeg"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/ffmpeg-4.3_2.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/nasm-2.15.02.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/texi2html-5.0.catalina.bottle.2.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/aom-2.0.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f7e7325021200363f73399a36e8462af18807747f7c797e172a1942b284a3da5--aom-2.0.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/dav1d-0.7.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/c10fad5e2acf57821df08d05d87c12d7e99b2306922872e29f790de2aecc04d3--dav1d-0.7.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/frei0r-1.7.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/e23cc4f0e35ce23ced53e2f611b3340bcdfeb16c7e334679cf55be3a24a25fcd--frei0r-1.7.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gmp-6.2.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/4d71d4452773366a5769f65c4aefed80d87f106ddd82f5901b42cef539ba6dd1--gmp-6.2.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libidn2-2.3.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/cbd0ad847173679a3f075eb37e9ae542eb79cca2e15602500fea5eb2e8b75f2c--libidn2-2.3.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtasn1-4.16.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/9f9697aead907a7b060fb88ec6cee600211f6ef6265f6c5fda30bff3c2498fc5--libtasn1-4.16.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/nettle-3.6.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/a653d5616ce1857f9f37ef91cf091d3368af127ad9d23a8fc4a643dbb9c92d5d--nettle-3.6.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/p11-kit-0.23.20_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/2561e72fef9250f0ae908d0669e89458f965cee7155ab796141f1ad891e569f2--p11-kit-0.23.20_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libevent-2.1.11_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/2fe39d57792d2d8c503a1e1d9b206723f6c9905f32b50633696909f4441f9ab7--libevent-2.1.11_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/unbound-1.10.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/0b18079c6801f5a8a0b4aa07ebfc4f2b1e2284df95c0273fb86546188db6aa08--unbound-1.10.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+#=#=#
+curl: (22) The requested URL returned error: 404
+Error: Failed to download resource "gnutls"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.14.tar.xz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/6b8099f2407374c42edc3bafcc12fe7f688a651b91e5d6f6cb221f4872dff621--gnutls-3.6.14.tar.xz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/fribidi-1.0.9.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/ba1a636f3e98ba7f42fe35b3f81d4ed4a2989d879a4ea80dee2b452e4cb6e09d--fribidi-1.0.9.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/graphite2-1.3.14.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/ace2870394f24067dfab8aa12e94d51de82fc4a4a958651056336a58c76d0154--graphite2-1.3.14.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/icu4c-67.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/8341c0adcd7b3b46071e6fd654a774d8dab11d38c667dc646513303d7ed191a0--icu4c-67.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/harfbuzz-2.6.8.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/01a9cee1a648704639d0a639ef59307ee4c468976f3037f8e71c53476e077271--harfbuzz-2.6.8.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libbluray-1.2.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/154ca642e591ff46919958cae735314312746c89d5bed7d3ad12a2760b7cd3ab--libbluray-1.2.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvidstab-1.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/71993f06097ee689f7e1ed99c4c3551b442f7f8bd992c5ae43ad2323f742d214--libvidstab-1.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libogg-1.3.4.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/6f231e0ad2f0eeff28a8e166972531ad5219799e3aaa4a965a67167c17abcb21--libogg-1.3.4.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvpx-1.8.2.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/e12f947cfba30ebb1c38fa56c252e118af7209c049538efcaaffce90b32cbb44--libvpx-1.8.2.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/jpeg-9d.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/a74c94b080c9591d8ca78e848beed3435e25148342db3ac74864c9a2e3f4813e--jpeg-9d.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtiff-4.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/46c49b74d3c399c166b00c295d1ba1ddcec3332e1706fbf7ecc82691ad77cf08--libtiff-4.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/little-cms2-2.11.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/015bd28053232fa1a02134b6baf9fb3c05987ad25297b7d8c9a90a512b8da416--little-cms2-2.11.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rav1e-0.3.3.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/676e13bd4b60e5b8d710c4a090fc12d3a8716eb6b11af89f0fe8ba36e681923d--rav1e-0.3.3.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rtmpdump-2.4%2B20151223_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/59fc0a432db79b5c8f7c0d0000983cdb14e0c3dd4315978f6b868c0ae604727e--rtmpdump-2.4+20151223_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/flac-1.3.3.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/855e62ba23591ed11aa46f7a69392e062e5dc0e08d1ddaa8d82fd2bc0d2dd791--flac-1.3.3.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/sdl2-2.0.12_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/1bb0c4e8dcf369970f963dadfe80ee2f24334e995e0dcd25ff77cadb992552fc--sdl2-2.0.12_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/snappy-1.1.8.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f2eab9d39467c58ed357db6cfa823878986d442b1ea27829d329119d590963c3--snappy-1.1.8.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/srt-1.4.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/bffaf071915d0a27cb11fc7e44cce9bb97cf4b91a4014da8ad0ab4a576fa8815--srt-1.4.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/giflib-5.2.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/18ed04199b7140d322362d61de401546bb4149c4479f4f14b4db4925466e8938--giflib-5.2.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/webp-1.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/53499bbbef191d66f361dce362915b1ced2d815cb7e301890345cacb333b342e--webp-1.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/leptonica-1.79.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/519e73666705609e88bdb1ad68776683ebaf3b9a53a94e6398b2eb76fb2cf542--leptonica-1.79.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/tesseract-4.1.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/54d577ea5f4c57ef9193d929fef6829ba9edc5a4c82f174bcd337747f0f57346--tesseract-4.1.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x264-r3011.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/4016c78ee42ea62f9a882b6d11d3d3afee302454dbdb340c76c742b87e65a7e9--x264-r3011.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x265-3.4.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f96aad5b227303f749933c89363fff8f3edd48563452d0c58b535279fb57a573--x265-3.4.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/xvid-1.3.7.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/3b85bd40806049a23c9674d4898ed06c5cc8c803cb0bb91b213370968ce8dae0--xvid-1.3.7.catalina.bottle.tar.gz
+==> Downloading https://ffmpeg.org/releases/ffmpeg-4.3.tar.xz
+######################################################################## 100.0%
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you an update run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+
+==> Installing dependencies for ffmpeg: nasm, texi2html, aom, dav1d, frei0r, gmp, libidn2, libtasn1, nettle, p11-kit, libevent, unbound, gnutls, fribidi, graphite2, icu4c, harfbuzz, libbluray, libvidstab, libogg, libvpx, jpeg, libtiff, little-cms2, rav1e, rtmpdump, flac, sdl2, snappy, srt, giflib, webp, leptonica, tesseract, x264, x265 and xvid
+==> Installing ffmpeg dependency: nasm
+==> Pouring nasm-2.15.02.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/nasm/2.15.02: 29 files, 2.9MB
+==> Installing ffmpeg dependency: texi2html
+==> Pouring texi2html-5.0.catalina.bottle.2.tar.gz
+🍺  /usr/local/Cellar/texi2html/5.0: 279 files, 6.2MB
+==> Installing ffmpeg dependency: aom
+==> Pouring aom-2.0.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/aom/2.0.0: 19 files, 16.1MB
+==> Installing ffmpeg dependency: dav1d
+==> Pouring dav1d-0.7.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/dav1d/0.7.1: 15 files, 1.4MB
+==> Installing ffmpeg dependency: frei0r
+==> Pouring frei0r-1.7.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/frei0r/1.7.0: 128 files, 2.3MB
+==> Installing ffmpeg dependency: gmp
+==> Pouring gmp-6.2.0.catalina.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink include/gmp.h
+Target /usr/local/include/gmp.h
+already exists. You may want to remove it:
+  rm '/usr/local/include/gmp.h'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite gmp
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run gmp
+
+Possible conflicting files are:
+/usr/local/include/gmp.h
+/usr/local/share/info/gmp.info
+/usr/local/share/info/gmp.info-1
+/usr/local/share/info/gmp.info-2
+/usr/local/lib/libgmp.10.dylib
+/usr/local/lib/libgmp.a
+/usr/local/lib/libgmp.dylib -> /usr/local/lib/libgmp.10.dylib
+==> Summary
+🍺  /usr/local/Cellar/gmp/6.2.0: 20 files, 3.2MB
+==> Installing ffmpeg dependency: libidn2
+==> Pouring libidn2-2.3.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libidn2/2.3.0: 70 files, 727.8KB
+==> Installing ffmpeg dependency: libtasn1
+==> Pouring libtasn1-4.16.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libtasn1/4.16.0: 60 files, 404.5KB
+==> Installing ffmpeg dependency: nettle
+==> Pouring nettle-3.6.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/nettle/3.6: 87 files, 2.4MB
+==> Installing ffmpeg dependency: p11-kit
+==> Pouring p11-kit-0.23.20_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/p11-kit/0.23.20_1: 63 files, 2.9MB
+==> Installing ffmpeg dependency: libevent
+==> Pouring libevent-2.1.11_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libevent/2.1.11_1: 1,063 files, 5MB
+==> Installing ffmpeg dependency: unbound
+==> Pouring unbound-1.10.1.catalina.bottle.tar.gz
+==> Caveats
+To have launchd start unbound now and restart at startup:
+  sudo brew services start unbound
+==> Summary
+🍺  /usr/local/Cellar/unbound/1.10.1: 57 files, 5MB
+==> Installing ffmpeg dependency: gnutls
+==> Pouring gnutls-3.6.14.catalina.bottle.tar.gz
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/970e18047a7fef38e61e23df3db2e134fe1e793850752fccc05d6d8b011763b5--gnutls-3.6.14.catalina.bottle.tar.gz'
+Error: Failure while executing; `tar xof /Users/libinyl/Library/Caches/Homebrew/downloads/970e18047a7fef38e61e23df3db2e134fe1e793850752fccc05d6d8b011763b5--gnutls-3.6.14.catalina.bottle.tar.gz -C /var/folders/bv/y64htx9n21g5n62t4xwqsfwr0000gn/T/d20200716-11732-1yajq9r` exited with 1. Here's the output:
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/970e18047a7fef38e61e23df3db2e134fe1e793850752fccc05d6d8b011763b5--gnutls-3.6.14.catalina.bottle.tar.gz'
+
+Warning: Bottle installation failed: building from source.
+==> Installing dependencies for gnutls: automake
+==> Installing gnutls dependency: automake
+==> Pouring automake-1.16.2.catalina.bottle.tar.gz
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/4435627cbd71a388465fdfc5a9c437e43e5df988bb77eaf1781164719f4dd5f8--automake-1.16.2.catalina.bottle.tar.gz'
+Error: Failure while executing; `tar xof /Users/libinyl/Library/Caches/Homebrew/downloads/4435627cbd71a388465fdfc5a9c437e43e5df988bb77eaf1781164719f4dd5f8--automake-1.16.2.catalina.bottle.tar.gz -C /var/folders/bv/y64htx9n21g5n62t4xwqsfwr0000gn/T/d20200716-11732-16bez8f` exited with 1. Here's the output:
+tar: Error opening archive: Failed to open '/Users/libinyl/Library/Caches/Homebrew/downloads/4435627cbd71a388465fdfc5a9c437e43e5df988bb77eaf1781164719f4dd5f8--automake-1.16.2.catalina.bottle.tar.gz'
+
+Warning: Bottle installation failed: building from source.
+==> Downloading https://ftp.gnu.org/gnu/automake/automake-1.16.2.tar.xz
+######################################################################## 100.0%
+==> ./configure --prefix=/usr/local/Cellar/automake/1.16.2
+==> make install
+🍺  /usr/local/Cellar/automake/1.16.2: 131 files, 3MB, built in 28 seconds
+==> ./configure --disable-static --prefix=/usr/local/Cellar/gnutls/3.6.14 --sysconfdir=/usr/local/etc --with-default-trust-store-file=/usr/local/
+==> make LDFLAGS= install
+Last 15 lines from /Users/libinyl/Library/Logs/Homebrew/gnutls/02.make:
+      __gnutls_dsa_compute_k in libcrypto.a(dsa-compute-k.o)
+  "_mpz_limbs_finish", referenced from:
+      __gnutls_dsa_compute_k in libcrypto.a(dsa-compute-k.o)
+  "_mpz_limbs_read", referenced from:
+      __gnutls_dsa_compute_k in libcrypto.a(dsa-compute-k.o)
+  "_mpz_limbs_write", referenced from:
+      __gnutls_dsa_compute_k in libcrypto.a(dsa-compute-k.o)
+  "_mpz_roinit_n", referenced from:
+      __gnutls_gostdsa_unmask_key in libcrypto.a(gostdsa-mask.o)
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[3]: *** [libgnutls.la] Error 1
+make[2]: *** [install-recursive] Error 1
+make[1]: *** [install] Error 2
+make: *** [install-recursive] Error 1
+
+READ THIS: https://docs.brew.sh/Troubleshooting
+
+
+Error: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you an update run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+
+
+==> Upgrading ffmpeg 4.1.4_1 -> 4.3_2
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+#=#=#
+curl: (22) The requested URL returned error: 404
+Error: Failed to download resource "gnutls"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.14.tar.xz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/6b8099f2407374c42edc3bafcc12fe7f688a651b91e5d6f6cb221f4872dff621--gnutls-3.6.14.tar.xz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/fribidi-1.0.9.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/ba1a636f3e98ba7f42fe35b3f81d4ed4a2989d879a4ea80dee2b452e4cb6e09d--fribidi-1.0.9.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/graphite2-1.3.14.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/ace2870394f24067dfab8aa12e94d51de82fc4a4a958651056336a58c76d0154--graphite2-1.3.14.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/icu4c-67.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/8341c0adcd7b3b46071e6fd654a774d8dab11d38c667dc646513303d7ed191a0--icu4c-67.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/harfbuzz-2.6.8.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/01a9cee1a648704639d0a639ef59307ee4c468976f3037f8e71c53476e077271--harfbuzz-2.6.8.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libbluray-1.2.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/154ca642e591ff46919958cae735314312746c89d5bed7d3ad12a2760b7cd3ab--libbluray-1.2.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvidstab-1.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/71993f06097ee689f7e1ed99c4c3551b442f7f8bd992c5ae43ad2323f742d214--libvidstab-1.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libogg-1.3.4.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/6f231e0ad2f0eeff28a8e166972531ad5219799e3aaa4a965a67167c17abcb21--libogg-1.3.4.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvpx-1.8.2.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/e12f947cfba30ebb1c38fa56c252e118af7209c049538efcaaffce90b32cbb44--libvpx-1.8.2.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/jpeg-9d.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/a74c94b080c9591d8ca78e848beed3435e25148342db3ac74864c9a2e3f4813e--jpeg-9d.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtiff-4.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/46c49b74d3c399c166b00c295d1ba1ddcec3332e1706fbf7ecc82691ad77cf08--libtiff-4.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/little-cms2-2.11.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/015bd28053232fa1a02134b6baf9fb3c05987ad25297b7d8c9a90a512b8da416--little-cms2-2.11.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rav1e-0.3.3.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/676e13bd4b60e5b8d710c4a090fc12d3a8716eb6b11af89f0fe8ba36e681923d--rav1e-0.3.3.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rtmpdump-2.4%2B20151223_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/59fc0a432db79b5c8f7c0d0000983cdb14e0c3dd4315978f6b868c0ae604727e--rtmpdump-2.4+20151223_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/flac-1.3.3.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/855e62ba23591ed11aa46f7a69392e062e5dc0e08d1ddaa8d82fd2bc0d2dd791--flac-1.3.3.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/sdl2-2.0.12_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/1bb0c4e8dcf369970f963dadfe80ee2f24334e995e0dcd25ff77cadb992552fc--sdl2-2.0.12_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/snappy-1.1.8.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f2eab9d39467c58ed357db6cfa823878986d442b1ea27829d329119d590963c3--snappy-1.1.8.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/srt-1.4.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/bffaf071915d0a27cb11fc7e44cce9bb97cf4b91a4014da8ad0ab4a576fa8815--srt-1.4.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/giflib-5.2.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/18ed04199b7140d322362d61de401546bb4149c4479f4f14b4db4925466e8938--giflib-5.2.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/webp-1.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/53499bbbef191d66f361dce362915b1ced2d815cb7e301890345cacb333b342e--webp-1.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/leptonica-1.79.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/519e73666705609e88bdb1ad68776683ebaf3b9a53a94e6398b2eb76fb2cf542--leptonica-1.79.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/tesseract-4.1.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/54d577ea5f4c57ef9193d929fef6829ba9edc5a4c82f174bcd337747f0f57346--tesseract-4.1.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x264-r3011.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/4016c78ee42ea62f9a882b6d11d3d3afee302454dbdb340c76c742b87e65a7e9--x264-r3011.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x265-3.4.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f96aad5b227303f749933c89363fff8f3edd48563452d0c58b535279fb57a573--x265-3.4.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/xvid-1.3.7.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/3b85bd40806049a23c9674d4898ed06c5cc8c803cb0bb91b213370968ce8dae0--xvid-1.3.7.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/ffmpeg-4.3_2.catalina.bottle.tar.gz
+#########                                                                 13.1%
+curl: (92) HTTP/2 stream 0 was not closed cleanly: INTERNAL_ERROR (err 2)
+Error: Failed to download resource "ffmpeg"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/ffmpeg-4.3_2.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+#=#=#
+curl: (22) The requested URL returned error: 404
+Error: Failed to download resource "gnutls"
+Download failed: https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gnutls-3.6.14.catalina.bottle.tar.gz
+Warning: Bottle installation failed: building from source.
+==> Downloading https://www.gnupg.org/ftp/gcrypt/gnutls/v3.6/gnutls-3.6.14.tar.xz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/6b8099f2407374c42edc3bafcc12fe7f688a651b91e5d6f6cb221f4872dff621--gnutls-3.6.14.tar.xz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/fribidi-1.0.9.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/ba1a636f3e98ba7f42fe35b3f81d4ed4a2989d879a4ea80dee2b452e4cb6e09d--fribidi-1.0.9.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/graphite2-1.3.14.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/ace2870394f24067dfab8aa12e94d51de82fc4a4a958651056336a58c76d0154--graphite2-1.3.14.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/icu4c-67.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/8341c0adcd7b3b46071e6fd654a774d8dab11d38c667dc646513303d7ed191a0--icu4c-67.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/harfbuzz-2.6.8.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/01a9cee1a648704639d0a639ef59307ee4c468976f3037f8e71c53476e077271--harfbuzz-2.6.8.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libbluray-1.2.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/154ca642e591ff46919958cae735314312746c89d5bed7d3ad12a2760b7cd3ab--libbluray-1.2.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvidstab-1.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/71993f06097ee689f7e1ed99c4c3551b442f7f8bd992c5ae43ad2323f742d214--libvidstab-1.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libogg-1.3.4.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/6f231e0ad2f0eeff28a8e166972531ad5219799e3aaa4a965a67167c17abcb21--libogg-1.3.4.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libvpx-1.8.2.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/e12f947cfba30ebb1c38fa56c252e118af7209c049538efcaaffce90b32cbb44--libvpx-1.8.2.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/jpeg-9d.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/a74c94b080c9591d8ca78e848beed3435e25148342db3ac74864c9a2e3f4813e--jpeg-9d.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtiff-4.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/46c49b74d3c399c166b00c295d1ba1ddcec3332e1706fbf7ecc82691ad77cf08--libtiff-4.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/little-cms2-2.11.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/015bd28053232fa1a02134b6baf9fb3c05987ad25297b7d8c9a90a512b8da416--little-cms2-2.11.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rav1e-0.3.3.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/676e13bd4b60e5b8d710c4a090fc12d3a8716eb6b11af89f0fe8ba36e681923d--rav1e-0.3.3.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/rtmpdump-2.4%2B20151223_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/59fc0a432db79b5c8f7c0d0000983cdb14e0c3dd4315978f6b868c0ae604727e--rtmpdump-2.4+20151223_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/flac-1.3.3.catalina.bottle.1.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/855e62ba23591ed11aa46f7a69392e062e5dc0e08d1ddaa8d82fd2bc0d2dd791--flac-1.3.3.catalina.bottle.1.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/sdl2-2.0.12_1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/1bb0c4e8dcf369970f963dadfe80ee2f24334e995e0dcd25ff77cadb992552fc--sdl2-2.0.12_1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/snappy-1.1.8.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f2eab9d39467c58ed357db6cfa823878986d442b1ea27829d329119d590963c3--snappy-1.1.8.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/srt-1.4.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/bffaf071915d0a27cb11fc7e44cce9bb97cf4b91a4014da8ad0ab4a576fa8815--srt-1.4.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/giflib-5.2.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/18ed04199b7140d322362d61de401546bb4149c4479f4f14b4db4925466e8938--giflib-5.2.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/webp-1.1.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/53499bbbef191d66f361dce362915b1ced2d815cb7e301890345cacb333b342e--webp-1.1.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/leptonica-1.79.0.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/519e73666705609e88bdb1ad68776683ebaf3b9a53a94e6398b2eb76fb2cf542--leptonica-1.79.0.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/tesseract-4.1.1.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/54d577ea5f4c57ef9193d929fef6829ba9edc5a4c82f174bcd337747f0f57346--tesseract-4.1.1.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x264-r3011.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/4016c78ee42ea62f9a882b6d11d3d3afee302454dbdb340c76c742b87e65a7e9--x264-r3011.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/x265-3.4.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/f96aad5b227303f749933c89363fff8f3edd48563452d0c58b535279fb57a573--x265-3.4.catalina.bottle.tar.gz
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/xvid-1.3.7.catalina.bottle.tar.gz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/3b85bd40806049a23c9674d4898ed06c5cc8c803cb0bb91b213370968ce8dae0--xvid-1.3.7.catalina.bottle.tar.gz
+==> Downloading https://ffmpeg.org/releases/ffmpeg-4.3.tar.xz
+Already downloaded: /Users/libinyl/Library/Caches/Homebrew/downloads/8c36dc859d4fb500b2e5fcd4171388bf52cc8e6596c594c684165a7279841654--ffmpeg-4.3.tar.xz
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences or run:
+  softwareupdate --all --install --force
+
+If that doesn't show you an update run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/more/.
+
+==> Installing dependencies for ffmpeg: gnutls, fribidi, graphite2, icu4c, harfbuzz, libbluray, libvidstab, libogg, libvpx, jpeg, libtiff, little-cms2, rav1e, rtmpdump, flac, sdl2, snappy, srt, giflib, webp, leptonica, tesseract, x264, x265 and xvid
+==> Installing ffmpeg dependency: fribidi
+==> Pouring fribidi-1.0.9.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/fribidi/1.0.9: 67 files, 608.6KB
+==> Installing ffmpeg dependency: graphite2
+==> Pouring graphite2-1.3.14.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/graphite2/1.3.14: 18 files, 235.5KB
+==> Installing ffmpeg dependency: icu4c
+==> Pouring icu4c-67.1.catalina.bottle.tar.gz
+==> Caveats
+icu4c is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have icu4c first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.zshrc
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.zshrc
+
+For compilers to find icu4c you may need to set:
+  export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+  export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+
+For pkg-config to find icu4c you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/icu4c/67.1: 258 files, 71.2MB
+==> Installing ffmpeg dependency: harfbuzz
+==> Pouring harfbuzz-2.6.8.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/harfbuzz/2.6.8: 166 files, 12MB
+==> Installing ffmpeg dependency: libbluray
+==> Pouring libbluray-1.2.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libbluray/1.2.0: 21 files, 1.5MB
+==> Installing ffmpeg dependency: libvidstab
+==> Pouring libvidstab-1.1.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libvidstab/1.1.0: 25 files, 135.9KB
+==> Installing ffmpeg dependency: libogg
+==> Pouring libogg-1.3.4.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/libogg/1.3.4: 97 files, 476.9KB
+==> Installing ffmpeg dependency: libvpx
+==> Pouring libvpx-1.8.2.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/libvpx/1.8.2: 17 files, 1.7MB
+==> Installing ffmpeg dependency: jpeg
+==> Pouring jpeg-9d.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/jpeg/9d: 21 files, 775.2KB
+==> Installing ffmpeg dependency: libtiff
+==> Pouring libtiff-4.1.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libtiff/4.1.0: 247 files, 3.7MB
+==> Installing ffmpeg dependency: little-cms2
+==> Pouring little-cms2-2.11.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/little-cms2/2.11: 21 files, 1MB
+==> Installing ffmpeg dependency: rav1e
+==> Pouring rav1e-0.3.3.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/rav1e/0.3.3: 13 files, 46.9MB
+==> Installing ffmpeg dependency: rtmpdump
+==> Pouring rtmpdump-2.4+20151223_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/rtmpdump/2.4+20151223_1: 20 files, 443.4KB
+==> Installing ffmpeg dependency: flac
+==> Pouring flac-1.3.3.catalina.bottle.1.tar.gz
+🍺  /usr/local/Cellar/flac/1.3.3: 53 files, 2.4MB
+==> Installing ffmpeg dependency: sdl2
+==> Pouring sdl2-2.0.12_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/sdl2/2.0.12_1: 89 files, 4.7MB
+==> Installing ffmpeg dependency: snappy
+==> Pouring snappy-1.1.8.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/snappy/1.1.8: 18 files, 122.6KB
+==> Installing ffmpeg dependency: srt
+==> Pouring srt-1.4.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/srt/1.4.1: 20 files, 3.3MB
+==> Installing ffmpeg dependency: giflib
+==> Pouring giflib-5.2.1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/giflib/5.2.1: 19 files, 383.3KB
+==> Installing ffmpeg dependency: webp
+==> Pouring webp-1.1.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/webp/1.1.0: 39 files, 2.1MB
+==> Installing ffmpeg dependency: leptonica
+==> Pouring leptonica-1.79.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/leptonica/1.79.0: 51 files, 6.0MB
+==> Installing ffmpeg dependency: tesseract
+==> Pouring tesseract-4.1.1.catalina.bottle.tar.gz
+==> Caveats
+This formula contains only the "eng", "osd", and "snum" language data files.
+If you need any other supported languages, run `brew install tesseract-lang`.
+==> Summary
+🍺  /usr/local/Cellar/tesseract/4.1.1: 65 files, 29.6MB
+==> Installing ffmpeg dependency: x264
+==> Pouring x264-r3011.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/x264/r3011: 11 files, 5.8MB
+==> Installing ffmpeg dependency: x265
+==> Pouring x265-3.4.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/x265/3.4: 11 files, 35.5MB
+==> Installing ffmpeg dependency: xvid
+==> Pouring xvid-1.3.7.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/xvid/1.3.7: 10 files, 1.2MB
+==> Installing ffmpeg
+==> ./configure --prefix=/usr/local/Cellar/ffmpeg/4.3_2 --enable-shared --enable-pthreads --enable-version3 --enable-avresample --cc=clang --host
+==> make install
+==> make alltools
+🍺  /usr/local/Cellar/ffmpeg/4.3_2: 299 files, 60.0MB, built in 5 minutes 4 seconds
+Removing: /usr/local/Cellar/ffmpeg/4.1.4_1... (282 files, 55.0MB)
+==> Upgrading ffmpeg 4.3_2 -> 4.3_2
+==> Upgrading ffmpeg 4.3_2 -> 4.3_2
+==> Upgrading gdk-pixbuf 2.38.1_1 -> 2.40.0_1
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gdk-pixbuf-2.40.0_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring gdk-pixbuf-2.40.0_1.catalina.bottle.tar.gz
+==> /usr/local/Cellar/gdk-pixbuf/2.40.0_1/bin/gdk-pixbuf-query-loaders --update-cache
+🍺  /usr/local/Cellar/gdk-pixbuf/2.40.0_1: 149 files, 3.3MB
+Removing: /usr/local/Cellar/gdk-pixbuf/2.38.1_1... (149 files, 3.2MB)
+==> Upgrading gdk-pixbuf 2.40.0_1 -> 2.40.0_1
+==> Upgrading gdk-pixbuf 2.40.0_1 -> 2.40.0_1
+==> Upgrading gdk-pixbuf 2.40.0_1 -> 2.40.0_1
+==> Upgrading glib 2.64.3 -> 2.64.3
+Removing: /usr/local/Cellar/glib/2.60.5... (429 files, 15.2MB)
+==> Upgrading glib 2.64.3 -> 2.64.3
+==> Upgrading glib 2.64.3 -> 2.64.3
+==> Upgrading glib 2.64.3 -> 2.64.3
+==> Upgrading gnutls 3.6.8 -> 3.6.14
+==> Upgrading graphviz 2.40.1_1 -> 2.44.0
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gd-2.3.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/netpbm-10.86.15.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/gts-0.7.6_2.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libtool-2.4.6_2.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/pango-1.44.7.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/graphviz-2.44.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Installing dependencies for graphviz: gd, netpbm, gts, libtool and pango
+==> Installing graphviz dependency: gd
+==> Pouring gd-2.3.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gd/2.3.0: 34 files, 1.1MB
+==> Installing graphviz dependency: netpbm
+==> Pouring netpbm-10.86.15.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/netpbm/10.86.15: 410 files, 7.8MB
+==> Installing graphviz dependency: gts
+==> Pouring gts-0.7.6_2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/gts/0.7.6_2: 27 files, 1.1MB
+==> Installing graphviz dependency: libtool
+==> Pouring libtool-2.4.6_2.catalina.bottle.tar.gz
+==> Caveats
+In order to prevent conflicts with Apple's own libtool we have prepended a "g"
+so, you have instead: glibtool and glibtoolize.
+==> Summary
+🍺  /usr/local/Cellar/libtool/2.4.6_2: 71 files, 3.7MB
+==> Installing graphviz dependency: pango
+==> Pouring pango-1.44.7.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/pango/1.44.7: 62 files, 4.3MB
+==> Installing graphviz
+==> Pouring graphviz-2.44.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/graphviz/2.44.0: 508 files, 11.3MB
+Removing: /usr/local/Cellar/graphviz/2.40.1_1... (500 files, 11.2MB)
+==> Upgrading graphviz 2.44.0 -> 2.44.0
+==> Upgrading graphviz 2.44.0 -> 2.44.0
+==> Upgrading graphviz 2.44.0 -> 2.44.0
+==> Upgrading gts 0.7.6_2 -> 0.7.6_2
+Removing: /usr/local/Cellar/gts/0.7.6_1... (27 files, 1.1MB)
+==> Upgrading gts 0.7.6_2 -> 0.7.6_2
+==> Upgrading gts 0.7.6_2 -> 0.7.6_2
+==> Upgrading gts 0.7.6_2 -> 0.7.6_2
+==> Upgrading harfbuzz 2.6.8 -> 2.6.8
+Removing: /usr/local/Cellar/harfbuzz/2.5.3... (151 files, 10MB)
+==> Upgrading harfbuzz 2.6.8 -> 2.6.8
+==> Upgrading harfbuzz 2.6.8 -> 2.6.8
+==> Upgrading harfbuzz 2.6.8 -> 2.6.8
+==> Upgrading libevent 2.1.11_1 -> 2.1.11_1
+Removing: /usr/local/Cellar/libevent/2.1.10... (857 files, 2.2MB)
+==> Upgrading libssh2 1.8.2 -> 1.9.0_1
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/libssh2-1.9.0_1.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libssh2-1.9.0_1.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/libssh2/1.9.0_1: 184 files, 941KB
+Removing: /usr/local/Cellar/libssh2/1.8.2... (182 files, 801.3KB)
+==> Upgrading meson 0.54.3_1 -> 0.54.3_1
+Removing: /usr/local/Cellar/meson/0.51.1... (122 files, 2MB)
+==> Upgrading meson 0.54.3_1 -> 0.54.3_1
+==> Upgrading meson 0.54.3_1 -> 0.54.3_1
+==> Upgrading meson 0.54.3_1 -> 0.54.3_1
+==> Upgrading nginx 1.17.1 -> 1.19.0
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/nginx-1.19.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring nginx-1.19.0.catalina.bottle.tar.gz
+==> Caveats
+Docroot is: /usr/local/var/www
+
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+
+nginx will load all files in /usr/local/etc/nginx/servers/.
+
+To have launchd start nginx now and restart at login:
+  brew services start nginx
+Or, if you don't want/need a background service you can just run:
+  nginx
+==> Summary
+🍺  /usr/local/Cellar/nginx/1.19.0: 25 files, 2.1MB
+Removing: /usr/local/Cellar/nginx/1.17.1... (25 files, 2MB)
+==> Upgrading pango 1.44.7 -> 1.44.7
+Removing: /usr/local/Cellar/pango/1.42.4_2... (106 files, 4.5MB)
+==> Upgrading pango 1.44.7 -> 1.44.7
+==> Upgrading pango 1.44.7 -> 1.44.7
+==> Upgrading pango 1.44.7 -> 1.44.7
+==> Upgrading python 3.7.6_1 -> 3.7.7
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/python-3.7.7.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring python-3.7.7.catalina.bottle.tar.gz
+==> /usr/local/Cellar/python/3.7.7/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/3.7.7/bin --instal
+==> /usr/local/Cellar/python/3.7.7/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/3.7.7/bin --instal
+==> /usr/local/Cellar/python/3.7.7/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/3.7.7/bin --instal
+==> Caveats
+Python has been installed as
+  /usr/local/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /usr/local/opt/python/libexec/bin
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python/3.7.7: 4,006 files, 61.2MB
+Removing: /usr/local/Cellar/python/3.7.4... (3,920 files, 61.3MB)
+Removing: /usr/local/Cellar/python/3.7.6_1... (8,586 files, 120.6MB)
+==> Upgrading python 3.7.7 -> 3.7.7
+==> Upgrading python 3.7.7 -> 3.7.7
+==> Upgrading python 3.7.7 -> 3.7.7
+==> Upgrading rtmpdump 2.4+20151223_1 -> 2.4+20151223_1
+Removing: /usr/local/Cellar/rtmpdump/2.4+20151223... (20 files, 418.5KB)
+==> Upgrading tmux 2.9a -> 3.1b
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/ncurses-6.2.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/utf8proc-2.5.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/tmux-3.1b.catalina.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Installing dependencies for tmux: ncurses and utf8proc
+==> Installing tmux dependency: ncurses
+==> Pouring ncurses-6.2.catalina.bottle.tar.gz
+==> Caveats
+ncurses is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have ncurses first in your PATH run:
+  echo 'export PATH="/usr/local/opt/ncurses/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find ncurses you may need to set:
+  export LDFLAGS="-L/usr/local/opt/ncurses/lib"
+  export CPPFLAGS="-I/usr/local/opt/ncurses/include"
+
+For pkg-config to find ncurses you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/ncurses/lib/pkgconfig"
+
+==> Summary
+🍺  /usr/local/Cellar/ncurses/6.2: 3,913 files, 8.6MB
+==> Installing tmux dependency: utf8proc
+==> Pouring utf8proc-2.5.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/utf8proc/2.5.0: 10 files, 650.2KB
+==> Installing tmux
+==> Pouring tmux-3.1b.catalina.bottle.1.tar.gz
+==> Caveats
+Example configuration has been installed to:
+  /usr/local/opt/tmux/share/tmux
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/tmux/3.1b: 9 files, 845.4KB
+Removing: /usr/local/Cellar/tmux/2.9a... (10 files, 748.5KB)
+==> Upgrading unbound 1.10.1 -> 1.10.1
+Removing: /usr/local/Cellar/unbound/1.9.2... (57 files, 4.8MB)
+==> Upgrading atk 2.32.0_1 -> 2.36.0
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/atk-2.36.0.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring atk-2.36.0.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/atk/2.36.0: 145 files, 2.6MB
+Removing: /usr/local/Cellar/atk/2.32.0_1... (144 files, 2.5MB)
+==> Upgrading wget 1.20.3 -> 1.20.3_2
+==> Downloading https://mirrors.aliyun.com/homebrew/homebrew-bottles/bottles/wget-1.20.3_2.catalina.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring wget-1.20.3_2.catalina.bottle.tar.gz
+🍺  /usr/local/Cellar/wget/1.20.3_2: 50 files, 4.0MB
+Removing: /usr/local/Cellar/wget/1.20.3... (50 files, 4.0MB)
+==> Upgrading atk 2.36.0 -> 2.36.0
+==> Upgrading atk 2.36.0 -> 2.36.0
+==> Upgrading atk 2.36.0 -> 2.36.0
+==> Upgrading cairo 1.16.0_3 -> 1.16.0_3
+==> Checking for dependents of upgraded formulae...
+Error: undefined local variable or method `formulae_to_install' for Homebrew:Module
+/usr/local/Homebrew/Library/Homebrew/upgrade.rb:164:in `block in check_installed_dependents'
+/usr/local/Homebrew/Library/Homebrew/cache_store.rb:17:in `use'
+/usr/local/Homebrew/Library/Homebrew/upgrade.rb:163:in `check_installed_dependents'
+/usr/local/Homebrew/Library/Homebrew/cmd/install.rb:266:in `install'
+/usr/local/Homebrew/Library/Homebrew/brew.rb:111:in `<main>'
+FAIL
+
+libinyl@LARYLI-MB0: ~
+$ brew install mycli                                                                                                                                 [11:46:22]
+Warning: mycli 1.21.1 is already installed and up-to-date
+To reinstall 1.21.1, run `brew reinstall mycli`

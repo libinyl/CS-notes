@@ -126,5 +126,13 @@ Node not empty: /test
 
 参考:
 
-https://blog.csdn.net/zhang123456456/article/details/78243658
+https://blog.csdn.net/zhang123456456/article/details/78243
+658
 
+
+
+QuorumCnxManager$Listener$ListenerHandler@1093] - Exception while listening
+java.net.BindException: Cannot assign requested address (Bind failed)
+        at java.net.PlainSocketImpl.socketBind(Native Method)
+
+quorumListenOnAllIPs=true

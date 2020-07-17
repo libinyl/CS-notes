@@ -22,12 +22,22 @@ mysql.server stop
 mysql.server start
 mysql.server restart
 
+## macos 后台启动 
+
+brew services start mysql@5.7
+
+# centos 启动
+
+service mysqld start
+
 ## 查看库配置
 
 ## select 语句分析
 
 select xxx from xx + conditionsql + limitsql + others
 
+## 中文乱码
+set names utf8
 
 ## 查看变量
 
@@ -38,6 +48,12 @@ select @@sql_mode;
 应当在 on 中筛选右表: 因为如果在 where 中筛选右表,有可能会损失了左表数据
 
 应当在 where 筛选左表: 如果在 on 中筛选左表, 会返回一行 null
+
+## 隔离级别
+
+读未提交: 
+
+
 
 
 A CA file has been bootstrapped using certificates from the system
