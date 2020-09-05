@@ -45,5 +45,9 @@ tar -zcvf  file.tar.gz  file1  file2
 
 tar -czf file.tar.gz (目录名)  ;压缩并打包目录
 
+压缩时排除目录
+
+ tar czf 目标 tar.gz --exclude=忽略目录 源目录
+
 # 解压
 

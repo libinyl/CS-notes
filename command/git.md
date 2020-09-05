@@ -163,3 +163,9 @@ git rm --cached <file-name>
 ## 统计代码行数
 
 git shortlog -sn
+
+## tag
+
+- 列出 tag 
+- 
+git tag

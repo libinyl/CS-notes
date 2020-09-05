@@ -127,3 +127,8 @@ for((i=0;i<10;i++));
 do   
 echo $(expr $i \* 3 + 1);  
 done
+
+##
+
+if [ "${#Exist[@]}" -ne 0 ]
+

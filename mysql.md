@@ -43,11 +43,21 @@ set names utf8
 
 select @@sql_mode;
 
+
+## mysqldump
+
+
+
+
 ## join
 
 应当在 on 中筛选右表: 因为如果在 where 中筛选右表,有可能会损失了左表数据
 
 应当在 where 筛选左表: 如果在 on 中筛选左表, 会返回一行 null
+
+## DATETIME 与 timestamp 的区别
+
+通常用 DATETIME
 
 ## 隔离级别
 
@@ -86,3 +96,14 @@ To have launchd start mysql now and restart at login:
   brew services start mysql
 Or, if you don't want/need a background service you can just run:
   mysql.server start
+
+
+Error occurred: Cannot setup server variables:
+
+在 /etc/mysqlcof 中加入skip-grant-tables
+
+service mysqld restart 
+
+ mysql_upgrade -u root --force
+
+ service mysqld restart 
