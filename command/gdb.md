@@ -299,3 +299,8 @@ https://stackoverflow.com/questions/6562403/i-dont-understand-wl-rpath-wl
 ## 查看函数表
 
 info functions 正则
+
+
+## 切换版本
+
+scl enable devtoolset-8 zsh

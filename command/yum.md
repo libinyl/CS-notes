@@ -29,6 +29,8 @@ https://www.cnblogs.com/fps2tao/p/7883782.html
  命令：yum info extras
  12.列出软件包提供哪些文件
  命令：yum provides~
+ 13 查看源
+ yum repolist 
 
 
 ## 更新镜像源

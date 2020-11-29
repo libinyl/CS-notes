@@ -132,3 +132,8 @@ done
 
 if [ "${#Exist[@]}" -ne 0 ]
 
+## 代码片段
+
+获取所在目录
+
+DIR="$( cd "$( dirname "$0"  )" && pwd  )"

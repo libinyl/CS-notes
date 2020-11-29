@@ -57,3 +57,8 @@ ld key1=value1 key2=value2 key3=value3
 
 ## -shared
 
+打印 header search path:
+
+echo | gcc -E -Wp,-v -
+
+https://gcc.gnu.org/onlinedocs/cpp/Search-Path.html

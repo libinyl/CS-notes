@@ -51,3 +51,5 @@ sudo tcpdump -s 0 -A 'tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x47455420'
 
 # tcpdump filter for HTTP POST 
 sudo tcpdump -s 0 -A 'tcp dst port 80 and (tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354)'
+
+ tcpdump -i <网卡名称> tcp and port <端口号> -n -nn -v -vv -w cache -W 100:100个文件 -C 30:文件大小30M -s 80：只抓包前面的80字节  -Z <用户名称如root>

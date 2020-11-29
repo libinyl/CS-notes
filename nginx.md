@@ -87,3 +87,6 @@ mysql -uroot -p --protocol=tcp --host=127.0.0.1 --port=3306
 
 /usr/local/nginx/conf
 
+## 查看模块
+
+ nginx -V 2>&1 | tr ' ' '\n'

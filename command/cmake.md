@@ -28,3 +28,13 @@ PROJECT_BINARY_DIR=全路径/build
 PROJECT_SOURCE_DIR=全路径/src
 
 https://www.jianshu.com/p/aaa19816f7ad
+
+## 模块目录
+
+/usr/local/share/cmake-3.16/Modules
+https://www.cnblogs.com/narjaja/p/9533199.html
+
+## 选项
+
+-H
+

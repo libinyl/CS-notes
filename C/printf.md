@@ -77,5 +77,6 @@ s |  输出字符串
 p |  输出指针地址
 lu |  32位无符号整数
 llu |  64位无符号整数
+h | 16 进制
 
 输出unsigned short ,unsigned int 一般用 %u

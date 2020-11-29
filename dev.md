@@ -1,6 +1,6 @@
 ## 常用命令
 
-remoterun.sh
+build.sh
 
 #!/sbin/sh
 export DEBUG=true

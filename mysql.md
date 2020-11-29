@@ -46,7 +46,7 @@ select @@sql_mode;
 
 ## mysqldump
 
-
+mysqldump -uroot -p123456 -P3306 -h127.0.0.1 库名 > xxx.sql
 
 
 ## join
@@ -107,3 +107,14 @@ service mysqld restart
  mysql_upgrade -u root --force
 
  service mysqld restart 
+
+
+## 按时间聚集
+
+date_format(FROM_UNIXTIME(`字段`),'%Y-%m-%d') AS time
+
+select count(1) as num, date_format(`create_time`,'%Y-%m-%d') AS created_date from abc  where xxx group by created_date
+
+date_format 的参数:
+
+DATE_FORMAT(date, format)
