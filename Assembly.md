@@ -35,5 +35,3 @@ c | %ecx, %cx, %cl
 d | %edx, %dx, %dl
 S | %esi, %si
 D | %edi, %di
-
-test1
